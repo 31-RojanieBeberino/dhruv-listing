@@ -1,0 +1,285 @@
+@media screen and (max-width:1024px){
+    .menu-toggle{
+        display: flex;
+        width: 43%;
+    }
+
+    .header-nav-section .nav-menu{
+        top:100px;
+        left: 0px;
+        position: absolute!important;
+        width: 100%;
+        flex-direction: column;
+        gap:15px;
+        padding:0px 20px;
+        background-color: #053944;
+        border-radius: 20px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .header-nav-section .nav-menu.open{
+        padding:30px 20px;
+        height: auto;
+    }
+
+    .header-brand{
+        width: 30%;
+    }
+
+    .haeder-search form{
+        gap:0px;
+        padding:10px 7px 10px 15px;
+    }
+
+    .banner{
+        height: 550px;
+    }
+
+    .inner-banner-sec{
+        height: 300px;
+    }
+
+    .search-btn{
+        width: 20%;
+    }
+
+    .banner-title{
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    .dropdown-field{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .select-view{
+        width:100%;
+        margin-top:-50px;
+    }
+
+    .list-filtering{
+        gap:25px;
+        flex-direction: column-reverse;
+    }
+
+    .dropdown-field select{
+        width: 30%;
+    }
+
+    .listing-filter{
+        padding:40px 20px;
+    }
+
+    .dropdown-field .result-btn{
+        width: 33.3%;
+    }
+
+    .dropdown-field .result-btn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .dropdown-field .result-btn input[type="button"]{
+        padding:10px;
+    }
+
+    .result-btn input[type="button"]{
+        text-align: left;
+    }
+
+
+
+    .listing-result{
+        flex-direction: column;
+    }
+
+    .list-items{
+        width: 100%;
+        align-items: center;
+    }
+
+    .listing-map{
+        width: 100%;
+    }
+
+
+
+    .top-footer{
+        padding:40px 20px;
+        flex-direction: column;
+        gap:40px;
+    }
+
+    .top-footer .footer-content{
+        width: 100%;
+        align-items: center;
+    }
+
+    .footerForm{
+        width: 70%;
+    }
+
+    .footerForm .result-btn input[type="submit"]{
+        text-align: left;
+    }
+
+    .top-footer .footer-content h2{
+        text-align: center;
+    }
+
+    .footer-cont-top{
+        align-items: center;
+    }
+
+    .footer-cont-top .footer-info p {
+        text-align: center;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    .menu-toggle{
+        width: 80px;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .header-search{
+        font-size:0px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+    }
+
+    .header-search::placeholder{
+        font-size: 0px;
+    }
+
+    .haeder-search{
+        width: 60px;
+    }
+
+    .haeder-search .search-btn{
+        width: 40px;
+    }
+
+    .haeder-search form {
+        position: relative;
+        gap:0px;
+        padding:7px;
+    }
+
+    .header-nav-section{
+        gap:20px;
+    }
+
+    .header-brand{
+        width:55%;
+    }
+
+
+    .banner-title{
+        font-size: 40px;
+    }
+
+    .search-section{
+        width: 100%;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .banner-search{
+        width: 100%;
+    }
+
+
+    .select-view{
+        margin: 0px;
+    }
+
+    .list-filtering{
+        flex-direction: column;
+    }
+
+    .dropdown-field select, .dropdown-field .result-btn{
+        width: 100%;
+    }
+
+    .listing-filter{
+        gap:30px;
+    }
+
+
+    .listing-filter h3{
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    .list-item{
+        width: 95%;
+    }
+
+    iframe{
+        height: 400px;
+    }
+
+
+    .top-footer .footer-content .footerLogo{
+        width: 200px;
+    }
+
+    .top-footer .footer-content h2{
+        font-size: 35px;
+    }
+
+    .top-footer .footer-content p{
+        text-align: center;
+    }
+
+    .footerForm{
+        flex-direction: column;
+        width: 100%;
+        background-color: transparent;
+        gap:10px;
+    }
+
+    .footerForm input[type="email"]{
+        padding:15px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 50px;
+        font-size: 15px;
+    }
+
+    .footerForm .result-btn{
+        width: 100%;
+    }
+
+    .footer-cont-top .nav-menu{
+        flex-direction: column;
+        gap:10px;
+        border-radius: 20px;
+        align-items: center;
+    }
+
+    .bot-footer{
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .bot-footer h5{
+        text-align: center;
+    }
+
+    .bot-footer ul{
+        justify-content: center;
+    }
+
+}
