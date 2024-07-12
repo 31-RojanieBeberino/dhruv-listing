@@ -208,6 +208,14 @@
         height: auto;
     }
 
+    .footer-cont-top .nav-menu li{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
 
 }
 
