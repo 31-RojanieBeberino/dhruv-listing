@@ -101,7 +101,7 @@
     }
 
     .listing-map{
-        width: 100%;
+        width: 100%!important;
     }
 
 
@@ -180,6 +180,34 @@
     .lead-prop .agent-img, .agent-list ul li img{
         width: 10%;
     }
+
+
+
+
+    .nav-menu li a{
+        pointer-events: none;
+    }
+
+    .contactMenu{
+        pointer-events: visible!important;
+    }
+
+
+
+    .menu-dropdown{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+
+    .nav-menu li:hover .menu-dropdown{
+        height: auto;
+    }
+
 
 }
 

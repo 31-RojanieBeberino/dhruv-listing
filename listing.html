@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css"> 
-    <title>Listing | </title>
+    <title>Listing | DHRUV</title>
 </head>
 
 <body>
@@ -24,19 +24,37 @@
                 </div>
                 <ul class="nav-menu">
                     <li>
-                        <a href="#">Properties <img src="images/drop-Icon.png"></a>
+                        <a href="/listing.html">Properties <img src="images/drop-Icon.png"></a>
+                        <ul class="menu-dropdown">
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/properties-main-page/">Residential</a></li>
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/properties-hide-map/">Commercial</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Services <img src="images/drop-Icon.png"></a>
+                        <ul class="menu-dropdown">
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/investment-sales/">Investment Sales</a></li>
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/leasing/">Leasing</a></li>
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/1031-exchange/">1031 Exchange</a></li>
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/consulting/">Consulting</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Insights <img src="images/drop-Icon.png"></a>
+                        <ul class="menu-dropdown">
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/insights-inner/">In The News</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">The Brokerage <img src="images/drop-Icon.png"></a>
+                        <ul class="menu-dropdown">
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/company/">Company</a></li>
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/leadership/">Leadership</a></li>
+                            <li><a href="https://riftofheroes.com/programming/dhruvinternational/our-agents/">Our Agents</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">Contact <img src="images/drop-Icon.png"></a>
+                        <a class="contactMenu" href="https://riftofheroes.com/programming/dhruvinternational/our-agents/">Contact</a>
                     </li>
                 </ul>
 
@@ -46,7 +64,7 @@
 
                 <div class="haeder-search">
                     <form>
-                        <input class="header-search" type="search" placeholder="Search here">
+                        <input class="header-search" type="text" placeholder="Search here">
                         <div class="search-btn">
                             <input type="submit">
                             <img src="images/searchBtn.png">
@@ -65,14 +83,14 @@
             <h2 class="banner-title">Explore Our Listings</h2>
             <div class="search-section">
                 <form class="banner-search">
-                    <input type="search" placeholder="Commercial">
+                    <input type="text" placeholder="Commercial">
                     <div class="search-btn">
                         <input type="submit">
                         <img src="images/wthIcon.png">
                     </div>
                 </form>
                 <form class="banner-search">
-                    <input type="search" placeholder="Residential">
+                    <input type="text" placeholder="Residential">
                     <div class="search-btn">
                         <input type="submit">
                         <img src="images/wthIcon.png">
@@ -129,9 +147,9 @@
                     <div class="select-view">
                         <h5>SELECT VIEW</h5>
                         <div class="view-sel">
-                            <img src="images/grid.svg">
-                            <img src="images/table-cells-solid.svg">
-                            <img src="images/list-solid.svg">
+                            <img id="grid" src="images/grid.svg">
+                            <img id="list" src="images/list-solid.svg">
+                            <img id="map" src="images/map-solid.svg">
                         </div>
                     </div>
                 </div>
@@ -140,11 +158,11 @@
 
             <div class="listing-result">
                 <div class="list-items">
-                    <div class="card-items">
-                        <div href="#" class="list-item" style="background-image: url('images/city1.png');">
+                    <div class="card-items grid">
+                        <div class="list-item" style="background-image: url('images/city1.png');">
                             <a class="list-tag">New</a>
                             <div class="item-info">
-                                <h3>Albertson</h3>
+                                <h3><a href="/listing-inner.html">Albertson</a></h3>
                                 <p>Cap Rate: 5.35%</p>
                                 <div class="item-price">
                                     <h5>Price: $13,401,974</h5>
@@ -152,10 +170,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div href="#" class="list-item" style="background-image: url('images/city2.png');">
+                        <div class="list-item" style="background-image: url('images/city2.png');">
                             <a class="list-tag">New</a>
                             <div class="item-info">
-                                <h3>Albertson</h3>
+                                <h3><a href="/listing-inner.html">Albertson</a></h3>
                                 <p>Cap Rate: 5.35%</p>
                                 <div class="item-price">
                                     <h5>Price: $13,401,974</h5>
@@ -163,10 +181,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div href="#" class="list-item" style="background-image: url('images/city3.png');">
+                        <div class="list-item" style="background-image: url('images/city3.png');">
                             <a class="list-tag">New</a>
                             <div class="item-info">
-                                <h3>Albertson</h3>
+                                <h3><a href="/listing-inner.html">Albertson</a></h3>
                                 <p>Cap Rate: 5.35%</p>
                                 <div class="item-price">
                                     <h5>Price: $13,401,974</h5>
@@ -174,10 +192,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div href="#" class="list-item" style="background-image: url('images/city4.png');">
+                        <div class="list-item" style="background-image: url('images/city4.png');">
                             <a class="list-tag">New</a>
                             <div class="item-info">
-                                <h3>Albertson</h3>
+                                <h3><a href="/listing-inner.html">Albertson</a></h3>
                                 <p>Cap Rate: 5.35%</p>
                                 <div class="item-price">
                                     <h5>Price: $13,401,974</h5>
@@ -185,10 +203,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div href="#" class="list-item" style="background-image: url('images/city5.png');">
+                        <div class="list-item" style="background-image: url('images/city5.png');">
                             <a class="list-tag">New</a>
                             <div class="item-info">
-                                <h3>Albertson</h3>
+                                <h3><a href="/listing-inner.html">Albertson</a></h3>
                                 <p>Cap Rate: 5.35%</p>
                                 <div class="item-price">
                                     <h5>Price: $13,401,974</h5>
@@ -196,10 +214,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div href="#" class="list-item" style="background-image: url('images/city6.png');">
+                        <div class="list-item" style="background-image: url('images/city6.png');">
                             <a class="list-tag">New</a>
                             <div class="item-info">
-                                <h3>Albertson</h3>
+                                <h3><a href="/listing-inner.html">Albertson</a></h3>
                                 <p>Cap Rate: 5.35%</p>
                                 <div class="item-price">
                                     <h5>Price: $13,401,974</h5>
@@ -207,10 +225,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div href="#" class="list-item" style="background-image: url('images/city1.png');">
+                        <div class="list-item" style="background-image: url('images/city1.png');">
                             <a class="list-tag">New</a>
                             <div class="item-info">
-                                <h3>Albertson</h3>
+                                <h3><a href="/listing-inner.html">Albertson</a></h3>
                                 <p>Cap Rate: 5.35%</p>
                                 <div class="item-price">
                                     <h5>Price: $13,401,974</h5>
@@ -218,6 +236,128 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="card-items list">
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Property Name</th>
+                                <th>Cap Rate</th>
+                                <th>Price</th>
+                                <th>Type</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </div>
                     <button class="view-more">View More <img src="images/colored-btn.png"></button>
                 </div>
@@ -251,23 +391,41 @@
                 </div>
                 <div class="footer-content footer-menu">
                    <div class="footer-cont-top">
-                        <ul class="nav-menu">
-                            <li>
-                                <a href="#">Properties <img src="images/drop-Icon.png"></a>
-                            </li>
-                            <li>
-                                <a href="#">Services <img src="images/drop-Icon.png"></a>
-                            </li>
-                            <li>
-                                <a href="#">Insights <img src="images/drop-Icon.png"></a>
-                            </li>
-                            <li>
-                                <a href="#">The Brokerage <img src="images/drop-Icon.png"></a>
-                            </li>
-                            <li>
-                                <a href="#">Contact <img src="images/drop-Icon.png"></a>
-                            </li>
-                        </ul>
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="/listing.html">Properties <img src="images/drop-Icon.png"></a>
+                            <ul class="menu-dropdown">
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/properties-main-page/">Residential</a></li>
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/properties-hide-map/">Commercial</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Services <img src="images/drop-Icon.png"></a>
+                            <ul class="menu-dropdown">
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/investment-sales/">Investment Sales</a></li>
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/leasing/">Leasing</a></li>
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/1031-exchange/">1031 Exchange</a></li>
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/consulting/">Consulting</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Insights <img src="images/drop-Icon.png"></a>
+                            <ul class="menu-dropdown">
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/insights-inner/">In The News</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">The Brokerage <img src="images/drop-Icon.png"></a>
+                            <ul class="menu-dropdown">
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/company/">Company</a></li>
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/leadership/">Leadership</a></li>
+                                <li><a href="https://riftofheroes.com/programming/dhruvinternational/our-agents/">Our Agents</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://riftofheroes.com/programming/dhruvinternational/our-agents/">Contact</a>
+                        </li>
+                    </ul>
                         <div class="footer-info">
                             <p>Office Locations</p>
                             <p>License Information & Online Disclosures</p>

@@ -109,9 +109,43 @@ a{
     gap: 10px;
     background-color:#00000071;
     border-radius: 50px;
-    padding:15px 20px;
+    padding:0px 20px;
     justify-content: space-between;
     transition: .4s;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li a{
+    padding:15px 0px;
+}
+
+.menu-dropdown{
+    width: 150px;
+    display: none;
+    background-color: #062F38;
+    position: absolute;
+}
+
+.menu-dropdown li{
+    padding:0px;
+}
+
+
+.nav-menu li:hover .menu-dropdown{
+    display: block;
+}
+
+.menu-dropdown li a {
+    padding: 15px;
+    transition: .4s;
+}
+
+.menu-dropdown a:hover{
+    background-color: #fff;
+    color: #053944;
 }
 
 
@@ -293,11 +327,14 @@ a{
     padding-bottom:15px;
 }
 
-.banner-search input[type="search"]{
+.banner-search input[type="text"]{
     width: 100%;
+    background-color: transparent;
+    border:0px;
+    outline: none;
 }
 
-.banner-search input[type="search"]::placeholder{
+.banner-search input[type="text"]::placeholder{
     color:#fff!important;
 }
 
@@ -467,13 +504,18 @@ a{
     align-items: flex-end;
 }
 
-.card-items{
+.card-items.grid{
     display: flex;
     flex-wrap: wrap;
     gap:20px;
     width: 100%;
     height: 810px;
     overflow: auto;
+}
+
+
+#grid{
+    cursor: pointer;
 }
 
 .list-item{
@@ -525,6 +567,12 @@ a{
 
 .list-item .item-info h3{
     font-size: 25px;
+}
+
+.list-item .item-info h3 a{
+    font-size: 25px;
+    color:#fff;
+    font-weight: 700;
 }
 
 .list-item .item-info p{
@@ -598,6 +646,82 @@ a{
   .container {
     scrollbar-width: thin; /* Make scrollbar thinner */
     scrollbar-color: #888 #f1f1f1; /* Thumb color, Track color */
+  }
+
+
+
+  .card-items.list{
+    width: 100%;
+    height: 810px;
+    overflow: auto;
+    display: none;
+  }
+
+
+
+
+  .card-items.list::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  .card-items.list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  
+  .card-items.list::-webkit-scrollbar-thumb {
+    background: #BCAC79; /* Color of the thumb */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  
+  .card-items.list::-webkit-scrollbar-thumb:hover {
+    background: #BCAC79; /* Color of the thumb when hovered */
+  }
+
+  .card-items.list table{
+    width: 97%;
+    border-spacing: 0px;
+  }
+
+  .card-items.list table thead{
+    height: 40px;
+    padding:15px;
+    background-color: #062F38;
+    border-bottom: 1px solid #085B69;
+    color:#fff;
+    text-transform: uppercase;
+  }
+
+  .card-items.list table thead tr{
+    padding:10px 25px;
+    text-align: left;
+  }
+
+  .card-items.list table thead tr th{
+    padding:10px 20px;
+  }
+
+  .card-items.list table tbody{
+    height: 40px!important;
+    background-color: #fff;
+  }
+
+  .card-items.list table tbody tr{
+    height: 40px;
+  }
+
+  .card-items tr:nth-child(even){
+    background-color: #e4e4e4;
+  }
+
+  .card-items.list table tbody tr td{
+    padding:15px 20px;
+    height: 40px;
+  }
+
+  .card-items.list table tbody tr td a {
+    color:#000;
+    text-decoration: none;
   }
 
 
