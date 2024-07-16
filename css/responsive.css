@@ -217,6 +217,25 @@
     }
 
 
+    .prop-type{
+        width: 18%;
+    }
+
+    .prop-list.tenant{
+        width: 160px;
+    }
+
+    .prop-list.loc li{
+        display: flex!important;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .prop-list.loc input[name="zip-code"]{
+        width: 100%!important;
+    }
+
+
 }
 
 
@@ -466,6 +485,36 @@
     .list-record{
         gap:20px;
         padding:20px;
+    }
+
+
+    .prop-type{
+        width: 100%;
+    }
+
+    .prop-list{
+        width: 100%!important;
+    }
+
+    .prop-name h5{
+        font-size: 14px;
+        width: 95%;
+    }
+
+    .chevo{
+        width: 5%;
+    }
+
+
+    .main-prop-list{
+        width: 100%;
+        flex-direction: row;
+        height: 300px;
+        overflow: auto;
+    }
+
+    .main-prop-list li {
+        width: 100%;
     }
 
 }

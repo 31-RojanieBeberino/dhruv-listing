@@ -429,14 +429,14 @@ a{
     gap:10px;
 }
 
-.dropdown-field select{
+/* .dropdown-field select{
     width: 15%;
     border: none;
     padding:10px 15px;
     font-size: 13px;
     border-radius:50px;
     outline: none;
-}
+} */
 
 .dropdown-field .result-btn{
     width: 25%;
@@ -444,6 +444,173 @@ a{
     display: flex;
     align-items: center;
 }
+
+
+
+.prop-type{
+    padding:0px;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 15%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;    
+    cursor: pointer;
+}
+
+
+.prop-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:0px;
+    width: 100%;
+    padding:15px 10px;
+}
+
+
+
+
+.prop-name h5{
+    font-size: 12px;
+    font-weight: 400;
+    width: 90%;
+}
+
+
+.chevo{
+    transform: rotate(0deg);
+    width: 10%;
+    height: 15px;
+    object-fit: contain;
+    transition: .4s;
+}
+
+.chevo-active{
+    transform: rotate(180deg);
+}
+
+
+
+.prop-list{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:15px;
+    transform: translateY(55px);
+    list-style: none;
+    display: none;
+    flex-wrap: wrap;
+    z-index: 3;
+    gap: 10px;
+    justify-content: flex-end;
+    height: auto;
+    transition: .4s;
+}
+
+.min-max{
+    width: 250px!important;
+}
+
+.min-max input::placeholder{
+    color:#c0c0c0;
+}
+
+.min-max li {
+    display:block!important;
+}
+
+
+.min-max input{
+    width: 100%;
+    border: 0;
+    background-color: #e4e4e4;
+    padding:10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.prop-list.tenant{
+    width: 200px;
+    flex-direction: column;
+    gap:10px;
+}
+
+.prop-list.tenant li{
+    width: 100%;
+}
+
+
+
+.prop-list.loc{
+    gap:10px;
+    width: 200px;
+}
+
+.prop-list.loc li {
+    display: block!important;
+    width: 100%;
+}
+
+.prop-list.loc select{
+    width: 100%!important;
+    padding: 10px;
+    background-color: #e4e4e4;
+    font-size: 13px;
+    border: 0;
+    outline: none;
+}
+
+.prop-list.loc input[name="zip-code"]{
+    padding:10px;
+    background-color: #e4e4e4;
+    font-size: 13px;
+    outline: none;
+    border: 0px;
+}
+
+
+
+
+
+.prop-list-active{
+    display: flex!important;
+}
+
+.prop-list li {
+    width: 47%;
+    display: flex;
+    font-size: 14px;
+    gap:10px;
+    align-items: flex-start;
+}
+
+.prop-list li input[type="checkbox"]{
+    margin-top:2px;
+}
+
+.prop-list input[value="APPLY"]{
+    padding:13px;
+    width: 130px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #062F38;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
 
 .result-btn input[type="button"]{
     border: none;
@@ -616,6 +783,8 @@ a{
 }
 
 /* Custom scrollbar for webkit browsers */
+
+
 .container {
     width: 300px;
     height: 200px;
@@ -647,8 +816,6 @@ a{
     scrollbar-width: thin; /* Make scrollbar thinner */
     scrollbar-color: #888 #f1f1f1; /* Thumb color, Track color */
   }
-
-
 
   .card-items.list{
     width: 100%;
@@ -1251,6 +1418,9 @@ a{
     font-size: 13px;
     font-weight: 400;
 }
+
+
+
 
 
 .prop-form{
