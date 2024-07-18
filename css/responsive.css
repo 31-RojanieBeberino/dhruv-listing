@@ -517,4 +517,15 @@
         width: 100%;
     }
 
+
+    .location-input{
+        flex-direction: column;
+    }
+
+    .location-search, .location-input .result-btn{
+        width: 100%;
+    }
+
+    
+
 }
