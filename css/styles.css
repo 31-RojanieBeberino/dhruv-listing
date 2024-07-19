@@ -1080,6 +1080,7 @@ a{
     font-size: 15px;
     color:#fff!important;
     text-align: right;
+    display: none;
   }
 
   .footer-cont-top .nav-menu{
