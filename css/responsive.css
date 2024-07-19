@@ -541,8 +541,9 @@
     }
 
     .inner-listing-image-slider .prev, .inner-listing-image-slider .next {
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
+        font-size:15px!important;
     }
 
     
