@@ -66,8 +66,34 @@ $(document).ready(function(){
 
 
 
-    $('.carousel').each(function() {
-        let $carousel = $(this);
+    // $('.carousel').each(function() {
+    //     let $carousel = $(this);
+    //     let $inner = $carousel.find('.carousel-inner');
+    //     let $items = $carousel.find('.carousel-item');
+    //     let totalSlides = $items.length;
+    //     let slideIndex = 0;
+
+    //     function updateSlidePosition() {
+    //         let newTransformValue = -slideIndex * 100 / totalSlides;
+    //         $inner.css('transform', `translateX(${newTransformValue}%)`);
+    //     }
+
+    //     $carousel.find('.next').click(function() {
+    //         slideIndex = (slideIndex + 1) % totalSlides;
+    //         updateSlidePosition();
+    //     });
+
+    //     $carousel.find('.prev').click(function() {
+    //         slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    //         updateSlidePosition();
+    //     });
+
+    //     updateSlidePosition();
+    // });
+
+
+
+    function initializeCarousel($carousel) {
         let $inner = $carousel.find('.carousel-inner');
         let $items = $carousel.find('.carousel-item');
         let totalSlides = $items.length;
@@ -78,18 +104,47 @@ $(document).ready(function(){
             $inner.css('transform', `translateX(${newTransformValue}%)`);
         }
 
-        $carousel.find('.next').click(function() {
+        function updateTotalSlides() {
+            $items = $carousel.find('.carousel-item');
+            totalSlides = $items.length;
+        }
+
+        $carousel.find('.next').off('click').on('click', function() {
             slideIndex = (slideIndex + 1) % totalSlides;
             updateSlidePosition();
         });
 
-        $carousel.find('.prev').click(function() {
+        $carousel.find('.prev').off('click').on('click', function() {
             slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
             updateSlidePosition();
         });
 
+        $carousel.on('DOMNodeInserted DOMNodeRemoved', function() {
+            updateTotalSlides();
+            if (slideIndex >= totalSlides) {
+                slideIndex = totalSlides - 1;
+            }
+            updateSlidePosition();
+        });
+
         updateSlidePosition();
+    }
+
+    $('.carousel').each(function() {
+        initializeCarousel($(this));
     });
+
+
+
+
+
+    $(".owl-carousel").owlCarousel({
+        items: 1, // Number of items to display at once
+        loop: true, // Loop through items
+        nav: true, // Enable next/prev navigation
+        dots: false, // Disable pagination
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"] // Custom icons for navigation
+      });
 
 
     var navbar = $('#navbar');

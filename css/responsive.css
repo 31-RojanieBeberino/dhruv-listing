@@ -546,6 +546,16 @@
         font-size:15px!important;
     }
 
-    
+    .map-toggle img{
+        display: none;
+    }
+
+    .listing-map iframe{
+        position: relative;
+    }
+
+    .inner-listing-image-slider img{
+        height: 260px!important;
+    }
 
 }
