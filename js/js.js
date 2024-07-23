@@ -138,13 +138,27 @@ $(document).ready(function(){
 
 
 
-    $(".owl-carousel").owlCarousel({
-        items: 1, // Number of items to display at once
-        loop: true, // Loop through items
-        nav: true, // Enable next/prev navigation
+    // $(".owl-carousel").owlCarousel({
+    //     items: 1, // Number of items to display at once
+    //     loop: true, // Loop through items
+    //     nav: true, // Enable next/prev navigation
+    //     dots: false, // Disable pagination
+    //     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"] // Custom icons for navigation
+    //   });
+
+
+
+
+
+    $('.mainSlider').slick({
         dots: false, // Disable pagination
-        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"] // Custom icons for navigation
-      });
+        infinite: true, // Infinite looping
+        speed: 300, // Transition speed
+        slidesToShow: 1, // Number of slides to show
+        slidesToScroll: 1, // Number of slides to scroll
+        prevArrow: "<button type='button' class='slick-prev'><i class='fa fa-chevron-left'></i></button>",
+        nextArrow: "<button type='button' class='slick-next'><i class='fa fa-chevron-right'></i></button>"
+    });
 
 
     var navbar = $('#navbar');

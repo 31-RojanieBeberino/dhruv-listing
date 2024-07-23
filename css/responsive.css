@@ -558,4 +558,32 @@
         height: 260px!important;
     }
 
+
+    .banner::before{
+        height: 450px;
+    }
+
+    .banner{
+        height: 450px;
+    }
+
+    .inner-banner-sec{
+        height: 200px;
+    }
+
+    .item-price{
+        align-items: center;
+    }
+
+    .item-price span{
+        font-size: 12px;
+    }
+
+    .inner-slider-sec{
+        height: 230px!important;
+    }
+    
+    .inner-slider-sec img {
+        height: 230px!important;
+    }
 }
