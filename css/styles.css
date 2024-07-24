@@ -89,7 +89,8 @@ a{
 .top-num{
     font-size: 15px;
     text-align: right;
-    color:#fff;
+    color:#fff!important;
+    text-decoration: none!important;
 }
 
 
@@ -103,10 +104,10 @@ a{
 }
 
 .nav-menu{
-    width: 40%;
+    width: 45%;
     display: flex;
-    gap: 10px;
-    background-color:#0C1E21;
+    gap: 5px!important;
+    background-color:rgba(0, 0, 0, 0.5);
     border-radius: 50px;
     padding:0px 20px;
     justify-content: space-between;
@@ -119,10 +120,13 @@ a{
 
 .nav-menu li a{
     padding:15px 0px;
+    transition: .4s;
+    color:#fff;
 }
 
+
 .menu-dropdown{
-    width: 150px;
+    width: 140px;
     display: none;
     background-color: #062F38;
     position: absolute;
@@ -137,14 +141,20 @@ a{
     display: block;
 }
 
+
+.nav-menu li:hover >  .menuList{
+    color: #BCAC79!important;
+}
+
 .menu-dropdown li a {
     padding: 15px;
     transition: .4s;
+    justify-content: center;
 }
 
 .menu-dropdown a:hover{
-    background-color: #fff;
-    color: #053944;
+    background-color: #BCAC79;
+    color: #fff;
 }
 
 
@@ -182,6 +192,10 @@ a{
     align-items: center;
 }
 
+.nav-menu a i {
+    font-size: 10px;
+}
+
 .nav-menu a img{
     width: 10px;
     height: 10px;
@@ -210,7 +224,7 @@ a{
 
 .haeder-search form{
     width: 100%;
-    background-color:#0C1E21;
+    background-color:rgba(0, 0, 0, 0.5);
     display: flex;
     gap:20px;
     border-radius: 50px;
@@ -250,7 +264,7 @@ a{
     width: 100%;
     height: 40px;
     position: absolute;
-    color: transparent;
+    color: transparent!important;
 }
 
 .search-btn img {
@@ -279,7 +293,7 @@ a{
 
 .banner-title{
     font-family: 'General Sans';
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color:#fff;
     text-transform: uppercase;
@@ -420,6 +434,7 @@ a{
 .listing-filter h3{
     font-size: 40px;
     color:#fff;
+    font-weight: 500;
 }
 
 
@@ -653,7 +668,7 @@ a{
     font-weight: 400;
     background-color: #BCAC79;
     border-radius: 50px;
-
+    font-size: 15px;
 }
 
 .result-btn img {
@@ -708,7 +723,7 @@ a{
     flex-direction: column;
     gap:50px;
     width: 65%;
-    align-items: flex-end;
+    align-items: flex-start;
     transition: .4s;
 }
 
@@ -732,7 +747,7 @@ a{
 }
 
 .list-item{
-    width: 46.5%;
+    width: 380px;
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
@@ -750,7 +765,7 @@ a{
 
 
 .list-itemMapClose{
-    width:32%;
+    width:380px;
 }
 
 
@@ -839,6 +854,7 @@ a{
     display:flex;
     align-items: center;
     transition: .4s;
+    padding-right:20px;
 }
 
 .map-toggle{
@@ -870,6 +886,11 @@ a{
     z-index:0;
     border: 1px solid #fff!important;
     transition: .4s;
+    border-radius: 20px;
+}
+
+.prop-listing-map iframe{
+    border-radius: 20px;
 }
 
 
@@ -1354,6 +1375,10 @@ a{
     gap:10px;
 }
 
+.record-items ul li{
+    color:#fff!important; 
+}
+
 
 
 
@@ -1704,4 +1729,9 @@ a{
     top: 50%!important;
     right:25px!important;
     z-index: 1;
+}
+
+
+input[type="submit"]{
+    color:#000!important;
 }
