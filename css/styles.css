@@ -1078,7 +1078,9 @@ a{
     border:none;
     background-color: transparent;
     text-align: center;
+    font-size: 16px!important;
   }
+
 
   .footerForm .result-btn img{
     top: 7px;
