@@ -708,4 +708,10 @@
         display: none;
     }
 
+
+    .card-items.grid{
+        height: auto;
+        justify-content: center;
+    }
+
 }

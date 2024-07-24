@@ -30,6 +30,11 @@ $(document).ready(function(){
     // });
 
 
+    $(".numberLsit").css({
+        "color": "#fff",
+        "text-decoration": "none"
+      });
+
     $('#grid').click(function() {
         $('.list').css('display', 'none');
         $('.grid').css('display', 'flex');
@@ -37,6 +42,7 @@ $(document).ready(function(){
         $('.list-items').css('display', 'flex');
         $('.listing-map iframe').css('position', 'absolute');
         $('.map-toggle img').css('display', 'block');
+        $('.pagination').css('display', 'flex');
     });
 
     $('#list').click(function() {
@@ -46,6 +52,7 @@ $(document).ready(function(){
         $('.list-items').css('display', 'flex');
         $('.listing-map iframe').css('position', 'absolute');
         $('.map-toggle img').css('display', 'block');
+        $('.pagination').css('display', 'none');
     });
 
     $('#map').click(function() {
@@ -55,6 +62,7 @@ $(document).ready(function(){
         $('.list-items').css('display', 'none');
         $('.listing-map iframe').css('position', 'relative');
         $('.map-toggle img').css('display', 'none');
+        $('.pagination').css('display', 'none');
     });
 
 
@@ -65,7 +73,91 @@ $(document).ready(function(){
         $('.list-items').toggleClass('list-itemmapClose');
         $('.list-item').toggleClass('list-itemMapClose');
         $('.map-toggle img').toggleClass('mapImg');
+        $('.card-items.grid').toggleClass('card-items-grid-Active');
     });
+
+    const itemsPerPage = 6;
+    const $items = $('.list-item');
+    const totalItems = $items.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+    function showPage(pageNumber) {
+        $items.hide();
+        $items.slice((pageNumber - 1) * itemsPerPage, pageNumber * itemsPerPage).show();
+    }
+
+    function createPagination() {
+        const $pagination = $('.pagination');
+        $pagination.empty(); // Clear existing pagination
+        for (let i = 1; i <= totalPages; i++) {
+            const $btn = $('<button>')
+                .addClass('pagination-btn')
+                .attr('data-page', i)
+                .text(i);
+            $pagination.append($btn);
+        }
+    }
+
+    function updatePagination(currentPage) {
+        $('.pagination-btn').removeClass('active');
+        $(`.pagination-btn[data-page="${currentPage}"]`).addClass('active');
+    }
+
+    // Initialize pagination
+    createPagination();
+    showPage(1); // Show first page initially
+
+    // Handle pagination button clicks
+    $(document).on('click', '.pagination-btn', function() {
+        const pageNumber = $(this).data('page');
+        showPage(pageNumber);
+        updatePagination(pageNumber);
+    });
+
+    // Optional: Adjust layout for mobile screens
+    $(window).on('resize', function() {
+        // Example: Reinitialize or adjust pagination if needed
+    });
+
+
+
+
+    // const itemsPerPage = 4;
+    // const $items = $('.list-item');
+    // const totalItems = $items.length;
+    // const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+    // function showPage(pageNumber) {
+    //     $items.hide();
+    //     $items.slice((pageNumber - 1) * itemsPerPage, pageNumber * itemsPerPage).show();
+    // }
+
+    // function createPagination() {
+    //     const $pagination = $('.pagination');
+    //     for (let i = 1; i <= totalPages; i++) {
+    //         const $btn = $('<button>')
+    //             .addClass('pagination-btn')
+    //             .attr('data-page', i)
+    //             .text(i);
+    //         $pagination.append($btn);
+    //     }
+    // }
+
+    // function updatePagination(currentPage) {
+    //     $('.pagination-btn').removeClass('active');
+    //     $(`.pagination-btn[data-page="${currentPage}"]`).addClass('active');
+    // }
+
+    // // Initialize pagination
+    // createPagination();
+    // showPage(1); // Show first page initially
+
+    // // Handle pagination button clicks
+    // $(document).on('click', '.pagination-btn', function() {
+    //     const pageNumber = $(this).data('page');
+    //     showPage(pageNumber);
+    //     updatePagination(pageNumber);
+    // });
 
 
 
