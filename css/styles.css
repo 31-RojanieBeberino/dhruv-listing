@@ -100,7 +100,6 @@ a{
     padding:10px 0px;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .nav-menu{
@@ -192,6 +191,11 @@ a{
 
 .header-brand{
     width: 20%;
+}
+
+
+.mobile{
+    display: none;
 }
 
 .header-brand img {
