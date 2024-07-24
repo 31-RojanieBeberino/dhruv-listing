@@ -100,7 +100,7 @@
 
 
     .banner::before{
-        height: 450px;
+        height: 500px;
     }
 
     .select-view{
@@ -677,11 +677,11 @@
 
 
     .banner::before{
-        height: 450px;
+        height: 370px;
     }
 
     .banner{
-        height: 450px;
+        height: 370px;
     }
 
     .inner-banner-sec{
