@@ -301,7 +301,7 @@ a{
     font-size: 50px;
     font-weight: 600;
     color:#fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .banner{

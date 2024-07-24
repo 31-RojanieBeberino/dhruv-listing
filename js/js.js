@@ -33,7 +33,7 @@ $(document).ready(function(){
     $(".numberLsit").css({
         "color": "#fff",
         "text-decoration": "none"
-      });
+    });
 
     $('#grid').click(function() {
         $('.list').css('display', 'none');
