@@ -678,4 +678,8 @@
         height: 250px!important;
     }
 
+    #map{
+        display: none;
+    }
+
 }
