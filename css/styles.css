@@ -195,7 +195,7 @@ a{
 
 
 .mobile{
-    display: none;
+    display: none!important;
 }
 
 .header-brand img {
@@ -1164,7 +1164,7 @@ a{
 
 .list-content{
     display: flex;
-    gap:100px;
+    gap:70px;
 }
 
 .listing-info{
@@ -1219,7 +1219,7 @@ a{
 }
 
 .prop-price i {
-    font-size: 35px;
+    font-size: 30px;
     object-fit: contain;
     color:#fff;
 }
@@ -1666,11 +1666,11 @@ a{
 .inner-slider-sec{
     border-radius: 20px;
     overflow: hidden;
-    height: 400px!important;
+    height: 500px!important;
 }
 
 .inner-slider-sec img {
-    height: 400px!important;
+    height: 500px!important;
 }
 
 .mainSlider img{
