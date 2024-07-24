@@ -467,8 +467,14 @@
     .footer-cont-top .nav-menu li a{
        width: 100%;
        justify-content: center;
+       padding-left: 20px!important;
     }
 
+
+    .footer-cont-top .nav-menu{
+        padding: 0px!important;
+        overflow: hidden;
+    }
     
 
     .bot-footer{
