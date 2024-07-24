@@ -1375,6 +1375,10 @@ a{
     gap:10px;
 }
 
+.phone-number{
+    color: #fff!important;
+}
+
 .record-items ul li{
     color:#fff!important; 
 }
