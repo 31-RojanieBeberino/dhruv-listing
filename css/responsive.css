@@ -256,9 +256,9 @@
 
 
 
-    .nav-menu li a{
+    /* .nav-menu li a{
         pointer-events: none;
-    }
+    } */
 
     .contactMenu{
         pointer-events: visible!important;
