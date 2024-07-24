@@ -4,6 +4,9 @@ $(document).ready(function(){
     });
 
 
+    $('.menuList').click(function(){
+        $('.menu-dropdown').toggleClass('menuDP-Mobile');
+    });
 
 
     // $('.prop-type').click(function(){
