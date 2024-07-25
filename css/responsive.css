@@ -1,4 +1,4 @@
-@media screen and (max-width:1024px){
+@media screen and (max-width:1230px){
     .menu-toggle{
         display: flex;
         width: 43%;
@@ -712,6 +712,31 @@
     .card-items.grid{
         height: auto;
         justify-content: center;
+    }
+
+    .lightSlider{
+        height: 300px!important;
+    }
+
+    .lslide {
+        border-radius:20px!important;
+        overflow: hidden;
+    }
+
+    .lslide img{
+        height: 300px!important;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .list-table tbody tr td:nth-child(even){
+        background-color: #062F38;
+    }
+
+    .prop-title h3, .prop-price h3{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:0px;
     }
 
 }

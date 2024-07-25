@@ -155,6 +155,7 @@ a{
     padding: 15px;
     transition: .4s;
     justify-content: center;
+    text-align: center;
 }
 
 .menu-dropdown a:hover{
@@ -1232,7 +1233,7 @@ a{
 
 .list-content{
     display: flex;
-    gap:70px;
+    gap:50px;
 }
 
 .listing-info{
@@ -1272,6 +1273,9 @@ a{
     font-size: 40px;
     font-weight: 500;
     color:#fff;
+    display: flex;
+    align-items: center;
+    gap:10px;
 }
 
 .prop-title p{
@@ -1566,21 +1570,21 @@ a{
     flex-direction: column;
 }
 
-.agent-list ul li{
+.agent-list ul li a{
     display: flex;
     gap:20px;
     align-items: center;
 }
 
-.agent-list ul li img {
+.agent-list ul li a img {
     width: 20%;
 }
 
-.agent-list ul li p b{
+.agent-list ul li a p b{
     font-size: 20px;
 }
 
-.agent-list ul li p {
+.agent-list ul li a p {
     width: 80%;
     color:#fff;
     font-size: 13px;
@@ -1800,7 +1804,7 @@ input[type="submit"]{
     font-family: 'General Sans';
     cursor: pointer;
     border-radius: 50px;
-    color:#fff!important;
+    color:#000!important;
 }
 
 .pagination-btn.active {
@@ -1814,4 +1818,24 @@ input[type="submit"]{
     object-fit: cover;
     margin-left:-5px;
     margin-bottom: -5px;
+}
+
+.lightSlider {
+    height: 500px;
+}
+
+.lslide{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.lslide img{
+    width: 100%;
+    object-fit: cover;
+    height: 500px!important;
+}
+
+
+.prop-price .askinPrice{
+    font-size: 18px!important;
 }

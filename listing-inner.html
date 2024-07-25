@@ -6,12 +6,15 @@
 
     <link rel="icon" href="images/favIcon.jpg" type="image/x-icon">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightslider/dist/css/lightslider.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css"> 
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 
 
@@ -46,7 +49,7 @@
                         <a class="menuList">Properties <i class="fas fa-chevron-down"></i></a>
                         <ul class="menu-dropdown">
                             <!-- <li><a href="https://app.dhruv-realty.com/listing.html">Residential</a></li> -->
-                            <li><a href="https://app.dhruv-realty.com/listing.html">Commercial</a></li>
+                            <li><a href="https://app.dhruv-realty.com/listing.html">Commercial Listings</a></li>
                         </ul>
                     </li>
                     <li>
@@ -56,6 +59,7 @@
                             <li><a href="https://dhruv-realty.com/leasing/">Leasing</a></li>
                             <li><a href="https://dhruv-realty.com/1031-exchange/">1031 Exchange</a></li>
                             <li><a href="https://dhruv-realty.com/consulting/">Consulting</a></li>
+                            <li><a href="https://dhruv-realty.com/other-services/">Other Services</a></li>
                         </ul>
                     </li>
                     <li>
@@ -104,7 +108,7 @@
             <div class="list-content">
                 <div class="listing-info">
                     <a href="https://app.dhruv-realty.com/listing.html">Back To Properties</a>
-                    <div class="mainSlider inner-slider-sec">
+                    <!-- <div class="mainSlider inner-slider-sec">
                         <div class="item">
                             <img src="images/city1.png" alt="Image 1">
                         </div>
@@ -117,6 +121,16 @@
                         <div class="item">
                             <img src="images/city2.png" alt="Image 4">
                         </div>
+                    </div> -->
+                    <div class="gallery">
+                        <ul id="lightSlider">
+                            <li data-thumb="images/city1.png"><img src="images/city1.png" /></li>
+                            <li data-thumb="images/city2.png"><img src="images/city2.png" /></li>
+                            <li data-thumb="images/city3.png"><img src="images/city3.png" /></li>
+                            <li data-thumb="images/city4.png"><img src="images/city4.png" /></li>
+                            <li data-thumb="images/city5.png"><img src="images/city5.png" /></li>
+                            <li data-thumb="images/city6.png"><img src="images/city6.png" /></li>
+                        </ul>
                     </div>
                     <div class="prop-header">
                         <div class="prop-title">
@@ -125,11 +139,27 @@
                         </div>
                         <div class="prop-price">
                             <i class="fas fa-download"></i>
-                            <h3>$9,000,000</h3>
+                            <h3> <span class="askinPrice">Asking Price</span> $9,000,000</h3>
                         </div>
                     </div>
 
                     <table class="list-table">
+                        <thead>
+                            <tr>
+                                <th>Ashing Cap Rate</th>
+                                <th>NO</th>
+                                <th>Lease structure</th>
+                                <th>Occupancy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Ashing Cap Rate">5.50%</td>
+                                <td data-label="NO">$144,019</td>
+                                <td data-label="Lease structure">Absolute NNN</td>
+                                <td data-label="Occupancy">95%</td>
+                            </tr>
+                        </tbody>
                         <thead>
                             <tr>
                                 <th>Price Per SF</th>
@@ -326,25 +356,31 @@
                         <h5>ADDITIONAL LISTING AGENT</h5>
                         <ul>
                             <li>
-                                <img src="images/agent1.png">
-                                <p>
-                                    <b>Robert Goldberg</b><br>
-                                    Associate Vice President
-                                </p>
+                                <a class="#">
+                                    <img src="images/agent1.png">
+                                    <p>
+                                        <b>Robert Goldberg</b><br>
+                                        Associate Vice President
+                                    </p>
+                                </a>
                             </li>
                             <li>
-                                <img src="images/agent2.png">
-                                <p>
-                                    <b>Brandon Senia</b><br>
-                                    Associate
-                                </p>
+                                <a class="#">
+                                    <img src="images/agent2.png">
+                                    <p>
+                                        <b>Brandon Senia</b><br>
+                                        Associate
+                                    </p>
+                                </a>
                             </li>
                             <li>
-                                <img src="images/agent3.png">
-                                <p>
-                                    <b>Rainer Mcdonald</b><br>
-                                    Associate
-                                </p>
+                                <a class="#">
+                                    <img src="images/agent3.png">
+                                    <p>
+                                        <b>Rainer Mcdonald</b><br>
+                                        Associate
+                                    </p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -441,7 +477,7 @@
                             <a class="menuList">Properties <i class="fas fa-chevron-down"></i></a>
                             <ul class="menu-dropdown">
                                 <!-- <li><a href="https://app.dhruv-realty.com/listing.html">Residential</a></li> -->
-                                <li><a href="https://app.dhruv-realty.com/listing.html">Commercial</a></li>
+                                <li><a href="https://app.dhruv-realty.com/listing.html">Commercial Listings</a></li>
                             </ul>
                         </li>
                         <li>
@@ -451,6 +487,7 @@
                                 <li><a href="https://dhruv-realty.com/leasing/">Leasing</a></li>
                                 <li><a href="https://dhruv-realty.com/1031-exchange/">1031 Exchange</a></li>
                                 <li><a href="https://dhruv-realty.com/consulting/">Consulting</a></li>
+                                <li><a href="https://dhruv-realty.com/other-services/">Other Services</a></li>
                             </ul>
                         </li>
                         <li>
@@ -505,9 +542,23 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/lightslider/dist/js/lightslider.min.js"></script>
+
 <script src="js/js.js"></script>
+<script>
+    $('#lightSlider').lightSlider({
+        gallery: true,
+        item: 1,
+        loop: true,
+        thumbItem: 4,
+        slideMargin: 0,
+        enableDrag: false,
+        currentPagerPosition: 'left',
+    });
+</script>
 
 </html>
