@@ -748,11 +748,11 @@
     }
 
     .main-slider .slick-track{
-        height: 240px!important;
+        height: 200px!important;
     }
 
     .main-slider .slick-track img{
-        height: 240px!important;
+        height: 200px!important;
         object-fit: cover!important;
     }
 
