@@ -739,4 +739,21 @@
         gap:0px;
     }
 
+    .thumbnail-slider{
+        padding-top:10px;
+    }
+    
+    .slick-list .slick-track{
+        gap:10px!important;
+    }
+
+    .main-slider .slick-track{
+        height: 240px!important;
+    }
+
+    .main-slider .slick-track img{
+        height: 240px!important;
+        object-fit: cover!important;
+    }
+
 }

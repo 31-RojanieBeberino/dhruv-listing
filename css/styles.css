@@ -1820,7 +1820,7 @@ input[type="submit"]{
     margin-bottom: -5px;
 }
 
-.lightSlider {
+/* .lightSlider {
     height: 500px;
 }
 
@@ -1834,8 +1834,46 @@ input[type="submit"]{
     object-fit: cover;
     height: 500px!important;
 }
+ */
 
-
-.prop-price .askinPrice{
+ .prop-price .askinPrice{
     font-size: 18px!important;
+}
+
+.gallery {
+    width: 100%;
+    max-width: 100%;
+}
+.slick-slide img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.thumbnail-slider{
+    padding-top:20px;
+}
+
+.slick-list .slick-track{
+    display: flex!important;
+    gap:20px!important;
+}
+
+.thumbnail-slider .slick-slide img {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.slick-prev, .slick-next{
+    top:-150%!important;
+}
+
+.slick-prev{
+    left: 25px!important;
+}
+
+.slick-next{
+    right:40px!important;
 }
