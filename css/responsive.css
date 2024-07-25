@@ -756,4 +756,8 @@
         object-fit: cover!important;
     }
 
+    .lead-prop .agent-img{
+        width: 20%!important;
+    }
+
 }
