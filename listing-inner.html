@@ -22,6 +22,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
+
+
+    <style>
+        
+    .gallery {
+    width: 100%;
+    max-width: 100%;
+    }
+    .slick-slide img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .main-slider .slick-slide img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .thumbnail-slider{
+        padding-top:20px;
+    }
+
+    .slick-list .slick-track{
+        display: flex!important;
+        gap:20px!important;
+    }
+
+    .thumbnail-slider .slick-slide img {
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .thumbnail-slider .slick-next:before, .thumbnail-slider .slick-prev:before{
+        font-size: 30px;
+    }
+
+
+    .thumbnail-slider .slick-prev, .thumbnail-slider .slick-next{
+        top:-150%!important;
+    }
+
+    .thumbnail-slider .slick-prev{
+        left: 50px!important;
+    }
+
+    .thumbnail-slider .slick-next{
+        right:50px!important;
+    }
+
+    @media screen and (max-width:500px){
+        .thumbnail-slider .slick-prev{
+            left: 30px!important;
+        }
+
+        .thumbnail-slider .slick-next{
+            right:30px!important;
+        }
+    }
+
+    </style>
 </head>
 
 <body>

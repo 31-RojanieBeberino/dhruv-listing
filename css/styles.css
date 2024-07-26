@@ -1760,26 +1760,6 @@ a{
 }
 
 
-.slick-prev:before, .slick-next:before {
-    content: '';
-    color: #BCAC79!important;
-    font-size: 30px!important;
-}
-
-.slick-prev { 
-    position: absolute;
-    top: 50%!important;
-    left: 20px!important;
-    z-index: 1;
-}
-
-.slick-next { 
-    position: absolute;
-    top: 50%!important;
-    right:25px!important;
-    z-index: 1;
-}
-
 
 input[type="submit"]{
     color:#000!important;
@@ -1840,7 +1820,7 @@ input[type="submit"]{
     font-size: 18px!important;
 }
 
-.gallery {
+/* .gallery {
     width: 100%;
     max-width: 100%;
 }
@@ -1883,4 +1863,4 @@ input[type="submit"]{
 
 .slick-next{
     right:40px!important;
-}
+} */

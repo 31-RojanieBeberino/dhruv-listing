@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function(){
 
 
@@ -60,6 +57,11 @@ $(document).ready(function(){
         $('.card-items.grid').toggleClass('card-items-grid-Active');
     });
 
+
+
+
+
+
     const itemsPerPage = 6;
     const $items = $('.list-item');
     const totalItems = $items.length;
@@ -106,17 +108,6 @@ $(document).ready(function(){
 
 
 
-
-
-    $('.mainSlider').slick({
-        dots: false, // Disable pagination
-        infinite: true, // Infinite looping
-        speed: 300, // Transition speed
-        slidesToShow: 1, // Number of slides to show
-        slidesToScroll: 1, // Number of slides to scroll
-        prevArrow: "<button type='button' class='slick-prev'><i class='fa fa-chevron-left'></i></button>",
-        nextArrow: "<button type='button' class='slick-next'><i class='fa fa-chevron-right'></i></button>"
-    });
 
 
     var navbar = $('#navbar');
