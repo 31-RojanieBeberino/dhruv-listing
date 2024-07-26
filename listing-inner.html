@@ -46,11 +46,12 @@
 
     .thumbnail-slider{
         padding-top:20px;
+        position: relative!important;
     }
 
-    .slick-list .slick-track{
+    .thumbnail-slider .slick-list .slick-track{
         display: flex!important;
-        gap:20px!important;
+        gap:20px;
     }
 
     .thumbnail-slider .slick-slide img {
@@ -59,7 +60,7 @@
     }
 
     .thumbnail-slider .slick-next:before, .thumbnail-slider .slick-prev:before{
-        font-size: 30px;
+        font-size: 40px;
     }
 
 
@@ -68,7 +69,7 @@
     }
 
     .thumbnail-slider .slick-prev{
-        left: 50px!important;
+        left: 40px!important;
     }
 
     .thumbnail-slider .slick-next{
@@ -77,11 +78,15 @@
 
     @media screen and (max-width:500px){
         .thumbnail-slider .slick-prev{
-            left: 30px!important;
+            left: 20px!important;
         }
 
         .thumbnail-slider .slick-next{
-            right:30px!important;
+            right:35px!important;
+        }
+
+        .thumbnail-slider .slick-prev, .thumbnail-slider .slick-next{
+            top:-130%!important;
         }
     }
 
