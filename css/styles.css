@@ -152,7 +152,7 @@ a{
 }
 
 .menuList{
-    pointer-events: none;
+    pointer-events: none!important;
 }
 
 .menu-dropdown li a {
