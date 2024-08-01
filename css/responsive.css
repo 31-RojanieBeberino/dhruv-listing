@@ -761,7 +761,7 @@
     }
 
     .menuList{
-        pointer-events:inherit;
+        pointer-events:inherit!important;
     }
 
 
