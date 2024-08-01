@@ -151,6 +151,10 @@ a{
     color: #BCAC79!important;
 }
 
+.menuList{
+    pointer-events: none;
+}
+
 .menu-dropdown li a {
     padding: 15px;
     transition: .4s;

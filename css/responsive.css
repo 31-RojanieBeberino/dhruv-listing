@@ -760,5 +760,9 @@
         width: 20%!important;
     }
 
+    .menuList{
+        pointer-events:inherit;
+    }
+
 
 }
