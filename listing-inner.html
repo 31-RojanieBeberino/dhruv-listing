@@ -245,10 +245,10 @@
                         </tbody>
                     </table>
 
-                    <a href="/images/Offering Memorandum Template.pdf" target="_blank" class="offer-btn mobile">
+                    <button class="offer-btn mobile open-om" >
                         <p>OFFERING MEMORANDUM</p>
                         <img src="images/colored-btn.png">
-                    </a>
+                    </button>
 
                     <div class="list-description">
                         <h4>Investment Highlights</h4>
@@ -376,10 +376,40 @@
 
 
                 <div class="listing-sidebar">
-                    <a href="/images/Offering Memorandum Template.pdf" target="_blank" class="offer-btn desktop">
+
+
+                    <button href="" class="offer-btn desktop open-om">
                         <p>OFFERING MEMORANDUM</p>
                         <img src="images/colored-btn.png">
-                    </a>
+                    </button>
+
+                    <div class="modal-om">
+                        <form class="form-modal">
+                            <i class="fas fa-times close"></i>
+                            <h5> Offering Memorandum</h5>
+                            <div class="input-form">
+                                <h6>Fullame*</h6>
+                                <input type="text" name="om-name">
+                                <br>
+                                <h6>Email*</h6>
+                                <input type="email" name="om-email">
+                                <br>
+                                <h6>Phone Number*</h6>
+                                <input type="tel" name="om-phone">
+                                <br>
+                                <div class="om-accept">
+                                    <input type="checkbox" name="om-accept" id="om-accept-checkbox">
+                                    <h6 for="om-accept-checkbox">Accept Confidentiality Agreement</h6>
+                                </div>
+                                <div class="prop-submit">
+                                    <input type="submit" name="prop-submit" value="Send Message">
+                                    <img src="images/colored-btn.png">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
                     <div class="list-agent-info">
                         <h5>LEAD LISTING AGENT</h5>
                         <div class="lead-prop">
@@ -614,7 +644,6 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 
@@ -640,6 +669,9 @@
                 prevArrow: '<button type="button" class="slick-prev">Previous</button>',
                 nextArrow: '<button type="button" class="slick-next">Next</button>'
             });
+
+        
+
         });
 </script>
 
