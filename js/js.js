@@ -4,10 +4,12 @@ $(document).ready(function(){
 
     $('.open-om').click(function(){
         $('.modal-om').addClass('open-om-modal');
+        $('body').addClass('offBody');
     });
 
     $('.close').click(function(){
         $('.modal-om').removeClass('open-om-modal');
+        $('body').removeClass('offBody');
     });
 
 

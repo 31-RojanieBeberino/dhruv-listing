@@ -63,7 +63,9 @@ a{
 }
 
 
-
+.offBody{
+    overflow: hidden;
+}
 
 
 .header-main{
