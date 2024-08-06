@@ -336,6 +336,7 @@ a{
     position: relative;
     flex-direction: column;
     justify-content: flex-end;
+    z-index: 0;
 }
 
 .banner img{
