@@ -24,17 +24,12 @@
     width: 100%;
     max-width: 100%;
     }
-    .slick-slide img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
 
     .main-slider .slick-slide img {
         width: 100%;
         max-width: 100%;
-        height: auto;
+        height: 550px;
+        object-fit: cover;
         border-radius: 10px;
     }
 
@@ -51,6 +46,8 @@
     .thumbnail-slider .slick-slide img {
         cursor: pointer;
         border-radius: 10px;
+        height: 160px;
+        object-fit: cover;
     }
 
     .thumbnail-slider .slick-next:before, .thumbnail-slider .slick-prev:before{
@@ -85,6 +82,11 @@
         .thumbnail-slider .slick-prev, .thumbnail-slider .slick-next{
             top:-180%!important;
         }
+
+        .thumbnail-slider .slick-slide img{
+            height: 45px;
+        }
+
     }
 
     </style>
@@ -134,7 +136,7 @@
                     <li>
                         <a class="menuList">Insights <i class="fas fa-chevron-down"></i></a>
                         <ul class="menu-dropdown">
-                            <li><a href="https://dhruv-realty.com/insights-inner/">In The News</a></li>
+                            <li><a href="https://dhruv-realty.com/insigths/">In The News</a></li>
                         </ul>
                     </li>
                     <li>
@@ -564,7 +566,7 @@
                         <li>
                             <a class="menuList">Insights <i class="fas fa-chevron-down"></i></a>
                             <ul class="menu-dropdown">
-                                <li><a href="https://dhruv-realty.com/insights-inner/">In The News</a></li>
+                                <li><a href="https://dhruv-realty.com/insigths/">In The News</a></li>
                             </ul>
                         </li>
                         <li>
@@ -616,33 +618,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 
-<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/lightslider/dist/js/lightslider.min.js"></script> -->
-
-
 <script src="js/js.js"></script>
 
 <script>
-    // $('#lightSlider').lightSlider({
-    //     gallery: true,
-    //     item: 1,
-    //     loop: true,
-    //     thumbItem: 4,
-    //     slideMargin: 0,
-    //     enableDrag: false,
-    //     currentPagerPosition: 'left',
-    // });
-
-    // $(document).ready(function() {
-    //     $('#lightgallery').lightGallery({
-    //         selector: 'a',
-    //         thumbnail: true,
-    //         animateThumb: true,
-    //         showThumbByDefault: true
-    //     });
-    // });
     $(document).ready(function() {
             $('.main-slider').slick({
                 slidesToShow: 1,
