@@ -1911,12 +1911,12 @@ input[type="submit"]{
 
 .list-item .item-price h5{
     font-size: 17px;
-    width: 50%;
+    width: 70%;
 }
 
 .list-item .item-price span{
     font-size: 12px;
-    width: 50%;
+    width: 30%;
     text-align: right;
 }
 
