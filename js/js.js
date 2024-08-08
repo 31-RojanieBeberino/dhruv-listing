@@ -53,7 +53,7 @@ $(document).ready(function(){
 
     $('#grid').click(function() {
         $('.list').css('display', 'none');
-        $('.grid').css('display', 'flex');
+        $('.grid').css('display', 'block');
         $('.listing-map').css('width', '35%');
         $('.list-items').css('display', 'flex');
         $('.listing-map iframe').css('position', 'absolute');
