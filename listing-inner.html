@@ -47,6 +47,7 @@
         cursor: pointer;
         border-radius: 10px;
         height: 160px;
+        width: 100%;
         object-fit: cover;
     }
 
@@ -85,6 +86,31 @@
 
         .thumbnail-slider .slick-slide img{
             height: 45px;
+        }
+
+
+        .dropdown-results {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            width: calc(100% - 30px);
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+        }
+        .dropdown-results .result-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .dropdown-results .result-item:hover {
+            background-color: #f0f0f0;
+        }
+        .header-search {
+            height: 40px;
+        }
+        .dropdown-results {
+            height: 40px;
         }
 
     }
