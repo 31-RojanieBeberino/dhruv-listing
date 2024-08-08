@@ -1919,3 +1919,74 @@ input[type="submit"]{
     width: 50%;
     text-align: right;
 }
+
+
+.confiden-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.inner-confiden-sec{
+    width:100%;
+    max-width:1300px ;
+}
+
+.confiden-section{
+    padding:150px 20px 60px;
+    background-color: #053944;
+}
+
+.confiden-header{
+    width: 100%;
+}
+
+.page-logo{
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.confiden-header h1{
+    font-size: 35px;
+    color:#fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.2em;
+}
+
+.confiden-content{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    color: #fff;
+    width: 100%;
+    line-height: 1.7em;
+}
+
+.confiden-content ul{
+    list-style: none!important;
+}
+
+.logoSection{
+    position: relative;
+    width: 100%;
+}
+
+
+.confiLink{
+    text-decoration: none!important;
+    color:#000;
+    transition: .4s;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.confiLink:hover{
+    color:#062F38;
+}

@@ -788,4 +788,23 @@
         gap:20px;
     }
 
+    .logoSection.mobile {
+        display: flex!important;
+        justify-content: center;
+    }
+
+    .logoSection.mobile .page-logo{
+        position: relative!important;
+        width: 250px!important;
+        height: 250px;
+    }
+
+    .confiden-header h1{
+        text-align: center;
+    }
+
+    .confiden-content p, .confiden-content li{
+        font-size: 18px!important;
+    }
+
 }
