@@ -56,7 +56,6 @@ $(document).ready(function(){
         $('.grid').css('display', 'block');
         $('.listing-map').css('width', '35%');
         $('.list-items').css('display', 'flex');
-        $('.listing-map iframe').css('position', 'absolute');
         $('.map-toggle img').css('display', 'block');
         $('.pagination').css('display', 'flex');
     });
@@ -66,7 +65,6 @@ $(document).ready(function(){
         $('.list').css('display', 'block');
         $('.listing-map').css('width', '35%');
         $('.list-items').css('display', 'flex');
-        $('.listing-map iframe').css('position', 'absolute');
         $('.map-toggle img').css('display', 'block');
         $('.pagination').css('display', 'none');
     });
