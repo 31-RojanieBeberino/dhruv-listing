@@ -24,11 +24,13 @@ $(document).ready(function(){
     $('.open-om').click(function(){
         $('.modal-om').addClass('open-om-modal');
         $('body').addClass('offBody');
+        $('.header-main').css('z-index', '0');
     });
 
     $('.close').click(function(){
         $('.modal-om').removeClass('open-om-modal');
         $('body').removeClass('offBody');
+        $('.header-main').css('z-index', '1');
     });
 
 
