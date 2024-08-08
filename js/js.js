@@ -1,5 +1,24 @@
 $(document).ready(function(){
 
+
+    // Title Dots 
+
+    function truncateText(selector, maxLength) {
+        $(selector).each(function() {
+            var text = $(this).text();
+            if (text.length > maxLength) {
+                var truncated = text.substr(0, maxLength) + '...';
+                $(this).text(truncated);
+            }
+        });
+    }
+
+
+    truncateText('.sliderTitle', 20); 
+
+
+
+
     // OM Toggle
 
     $('.open-om').click(function(){
@@ -138,6 +157,12 @@ $(document).on('click', '.pagination-btn', function() {
         }
     });
 
+
+
+
+
+
+    
 
 
 });
