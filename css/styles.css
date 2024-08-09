@@ -1989,4 +1989,5 @@ input[type="submit"]{
 
 .confiLink:hover{
     color:#062F38;
+    text-decoration: underline;
 }
