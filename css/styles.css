@@ -1892,7 +1892,7 @@ input[type="submit"]{
     top: 0;
     left: 0;
     background: rgb(0,0,0);
-    background: linear-gradient(185deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(185deg, rgba(0,0,0,0) 82%, rgba(0,0,0,1) 100%);
     z-index: 1;
 }
 
