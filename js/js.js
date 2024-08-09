@@ -14,7 +14,7 @@ $(document).ready(function(){
     }
 
 
-    truncateText('.sliderTitle', 20); 
+    truncateText('.sliderTitle', 15); 
 
 
 
