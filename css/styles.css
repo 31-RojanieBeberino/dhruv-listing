@@ -890,7 +890,6 @@ a{
     display:flex;
     align-items: center;
     transition: .4s;
-    padding-right:20px;
 }
 
 .map-toggle{
@@ -915,10 +914,16 @@ a{
 }
 
 
-.listing-map iframe{
+
+
+.listing-map #map{
     border: 1px solid #fff!important;
     transition: .4s;
     border-radius: 20px;
+    overflow: hidden!important;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .prop-listing-map iframe{

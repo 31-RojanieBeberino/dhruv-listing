@@ -69,7 +69,7 @@ $(document).ready(function(){
         $('.pagination').css('display', 'none');
     });
 
-    $('#map').click(function() {
+    $('#mapSection').click(function() {
         $('.grid').css('display', 'none');
         $('.list').css('display', 'none');
         $('.listing-map').css('width', '100%');
