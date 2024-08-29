@@ -890,6 +890,7 @@ a{
     display:flex;
     align-items: center;
     transition: .4s;
+    height: 100%;
 }
 
 .map-toggle{
@@ -921,8 +922,8 @@ a{
     transition: .4s;
     border-radius: 20px;
     overflow: hidden!important;
-    position: absolute;
-    height: 100%;
+    position: relative;
+    height: 810px;
     width: 100%;
 }
 
