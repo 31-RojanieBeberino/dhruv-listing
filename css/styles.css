@@ -926,9 +926,14 @@ a{
     width: 100%;
 }
 
-.prop-listing-map iframe{
-    border-radius: 20px;
+.prop-listing-map {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    border-radius:20px;
 }
+
+
 
 
 .closeMap{
