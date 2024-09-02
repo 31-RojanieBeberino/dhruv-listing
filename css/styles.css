@@ -383,7 +383,11 @@ a{
     background-color: transparent;
     border:0px;
     outline: none;
+    color:#fff!important;
+    font-size: 18px;
 }
+
+
 
 .banner-search input[type="text"]::placeholder{
     color:#fff!important;
@@ -395,6 +399,14 @@ a{
     width: 600px;
     gap:100px;
     align-items: flex-start;
+}
+
+.leasingSearchBanner{
+    display: flex!important;
+}
+
+.leasingBanner{
+    height: 200px!important;
 }
 
 
@@ -2001,4 +2013,105 @@ input[type="submit"]{
 .confiLink:hover{
     color:#062F38;
     text-decoration: underline;
+}
+
+.leasingDropdown{
+    flex-wrap: nowrap!important;
+    flex-direction: column;
+}
+
+.prop-list.leasingDropdown{
+    width: 250px!important;
+}
+
+.prop-list.leasingDropdown li{
+    width: 100%!important;
+}
+
+
+.leasingLoc{
+    width: 30%;
+}
+
+
+.dropdown-field.leasingSection .result-btn{
+    width: 20%!important;
+}
+
+
+.dropdown-field.leasingSection .prop-list.loc{
+    width: 340px;
+    gap: 15px;
+}
+
+.dropdown-field.leasingSection .prop-list.loc li{
+    gap:10px;
+    display: flex!important;
+    flex-direction: column;
+}
+
+.dropdown-field.leasingSection .prop-list.loc input[name="zip-code"]{
+    width:100%;
+}
+
+
+.space-available-section{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.sas-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sas-title h3{
+    font-size:35px;
+    color:#fff;
+}
+
+
+.unit-section-map{
+    padding:15px;
+    border-radius: 15px;
+    background-color: #062F38;
+    position: relative;
+}
+
+.unit-section-map h5{
+    font-size: 20px;
+    position: absolute;
+    top:10px;
+    left:10px;
+    color:#BCAC79;
+    font-weight: 400;
+}
+
+.unit-details-sec{
+    display:flex;
+    gap:20px;
+}
+
+.unitDetail{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.unitDetail p {
+    color:#fff;
+    font-size: 18px;
+}
+
+.unitDetail h6{
+    color:#fff;
+    font-size: 18px;
+}
+
+.unitDetail img {
+    width: 100%;
 }
