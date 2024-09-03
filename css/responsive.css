@@ -850,5 +850,14 @@
         margin-top:30px;
     }
 
+    .modalSliderClose{
+        top:0;
+        right:-40%;
+    }
+
+    .modalSlider{
+        gap:20px;
+    }
+
 
 }

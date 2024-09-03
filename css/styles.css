@@ -369,6 +369,10 @@ a{
     gap:30px;
 }
 
+.leasingbannerSec{
+    height: 230px;
+}
+
 .banner-search{
     display: flex;
     gap:20px;
@@ -376,7 +380,14 @@ a{
     align-items: center;
     border-bottom:2px solid #ffffff8f;
     padding-bottom:15px;
+    cursor: pointer;
+    font-weight: 600;
 }
+
+
+
+
+
 
 .banner-search input[type="text"]{
     width: 100%;
@@ -404,6 +415,39 @@ a{
 .leasingSearchBanner{
     display: flex!important;
 }
+
+button.banner-search{
+    font-size:18px;
+    color:#fff;
+    border:0;
+    background-color: transparent;
+    border-bottom:1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    opacity: .8;
+    transition: .4s;
+}
+
+
+button.banner-search:hover{
+    opacity: 1;
+}
+
+button.banner-search.activeBtn{
+    opacity: 1;
+    border-bottom:2px solid #fff;
+}
+
+
+
+button.banner-search img{
+    width:35px;
+    position: relative;
+}
+
+
+
+
 
 .leasingBanner{
     height: 200px!important;
@@ -1677,6 +1721,7 @@ a{
 
 .subs-section{
     background-color: #053944;
+    z-index: -1;
 }
 
 
@@ -2102,6 +2147,56 @@ input[type="submit"]{
     width: 25%;
 }
 
+.modalSlider{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh!important;
+    width: 100%!important;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    top:0;
+    left: 0;
+    z-index:1000;
+    background-color: #000000b9;
+}
+
+
+.modalSliderClose{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color:#000;
+    position: relative;
+    font-family: 'General Sans';
+    border-radius: 50px;
+    cursor: pointer;
+    top:0;
+    right:-280px;
+}
+
+
+.modalSliderOpen{
+    display: flex;
+}
+
+.unitDetailSlider{
+    width: 80%;
+    max-width: 600px;
+    background-color: #0000007a;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.unitDetailSlider img{
+    width: 100%;
+}
+
 .unitDetail p {
     color:#fff;
     font-size: 18px;
@@ -2114,4 +2209,8 @@ input[type="submit"]{
 
 .unitDetail img {
     width: 100%;
+}
+
+#forLease{
+    display:none;
 }

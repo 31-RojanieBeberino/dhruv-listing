@@ -1,5 +1,37 @@
 $(document).ready(function(){
 
+    $('.imageTrigger').each(function(){
+        $('.imageTrigger').click(function(){
+            $('.modalSlider').addClass('modalSliderOpen');
+            $('body').css('overflow','hidden');
+        })
+
+        $('.modalSliderClose').click(function(){
+            $('.modalSlider').removeClass('modalSliderOpen');
+            $('body').css('overflow','auto');
+        })
+
+
+    })
+
+
+
+
+
+    $('#forsalebtn').click(function(){
+        $('#forSale').css('display', 'flex');
+        $('#forLease').css('display', 'none');
+        $('.banner-search').addClass('activeBtn');
+        $('#forleasebtn').removeClass('activeBtn');
+    })
+
+    $('#forleasebtn').click(function(){
+        $('#forSale').css('display', 'none');
+        $('#forLease').css('display', 'flex');
+        $('.banner-search').addClass('activeBtn');
+        $('#forsalebtn').removeClass('activeBtn');
+    })
+
 
     // Title Dots 
 
