@@ -792,9 +792,9 @@ button.banner-search img{
 }
 
 .view-sel i{
-    width: 30px;
-    font-size: 23px;
-    height: 30px;
+    width: 35px;
+    font-size: 30px;
+    height: 35px;
     color: #fff;
     fill: #fff;
     object-fit: contain;
@@ -861,6 +861,17 @@ button.banner-search img{
     transition: .4s;
     margin-right:20px;
     margin-bottom: 20px;
+}
+
+.leasingItem::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
 }
 
 
@@ -1516,6 +1527,7 @@ button.banner-search img{
     background-color: #BCAC79;
     align-items: center;
     border:0px;
+    cursor: pointer;
 }
 
 .offer-btn p {
@@ -1971,17 +1983,37 @@ input[type="submit"]{
 
 
 .list-item .item-price {
-    padding:20px 0px 0px;
+    padding:10px 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
+
+
+.leasingItem .item-price {
+    margin:15px 0px 0px;
+    padding:15px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:2px solid #ffffff2f;
+}
+
+
 
 .list-item .item-price h5{
     font-size: 17px;
     width: 70%;
 }
+
+
+.leasingItem .item-price h5{
+    font-size: 17px;
+    width: 70%;
+    font-weight: 500;
+}
+
+
 
 .list-item .item-price span{
     font-size: 12px;
