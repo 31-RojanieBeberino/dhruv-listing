@@ -304,7 +304,7 @@
                                 <td data-label="SF/YR">$23.00-$28.50</td>
                                 <td data-label="Year Built">2018</td>
                                 <td data-label="Building Size">8120 SF</td>
-                                <td data-label="Property Type">Retail</td>
+                                <td data-label="Space Use">Retail</td>
                             </tr>
                         </tbody>
                     </table>
@@ -790,9 +790,9 @@
                    <div class="footer-cont-bot">
                         <h3>Connect With Us</h3>
                         <div class="social-icons">
-                            <a href="#"><img src="images/fb.png"></a>
-                            <a href="#"><img src="images/inst.png"></a>
-                            <a href="#"><img src="images/x.png"></a>
+                            <a href="https://www.facebook.com/profile.php?id=61564660882709"><img src="images/fb.png"></a>
+                            <a href="https://www.instagram.com/dhruvcommercial?igsh=ajczNzNsenk1cmw2"><img src="images/inst.png"></a>
+                            <a href="https://www.linkedin.com/company/dhruv-realty/"><img src="images/linkIn.png"></a>
                         </div>
                    </div>
                 </div>
@@ -842,6 +842,19 @@
             });
 
 
+            // $('.unitDetailSlider').slick({
+            //     slidesToShow: 1,
+            //     slidesToScroll: 1,
+            //     arrows: true,
+            //     fade: true,
+            //     autoplay: true, // Enable autoplay
+            //     autoplaySpeed: 3000,
+            //     prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+            //     nextArrow: '<button type="button" class="slick-next">Next</button>',
+            //     // Optionally, you can set 'initialSlide' if you want to specify the initial slide
+            //     initialSlide: 2 // This sets the 3rd slide (index 2) as the initial slide
+            // });
+
             $('.unitDetailSlider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -851,19 +864,13 @@
                 autoplaySpeed: 3000,
                 prevArrow: '<button type="button" class="slick-prev">Previous</button>',
                 nextArrow: '<button type="button" class="slick-next">Next</button>',
-                // Optionally, you can set 'initialSlide' if you want to specify the initial slide
                 initialSlide: 2 // This sets the 3rd slide (index 2) as the initial slide
+            }).on('afterChange', function(event, slick, currentSlide){
+                // Stop autoplay after the first slide change
+                slick.slickPause();
             });
-
-            // Optionally, use 'init' event to ensure the slider is fully loaded before setting active slide
-            $('.unitDetailSlider').on('init', function(event, slick){
-                // Set the slide to the desired index (2 in this example)
-                $('.unitDetailSlider').slick('slickGoTo', 2);
-            });
-        
-
         });
-</script>
+        </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALqBsjd6GtBlG1JSn_Ux4c8t5QSTBf-0A&callback=initMap&v=weekly"
       defer
