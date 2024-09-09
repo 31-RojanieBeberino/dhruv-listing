@@ -509,12 +509,19 @@ button.banner-search img{
     gap:60px;
 }
 
-
-
-.listing-filter{
+.formSectionFilter{
     background-color: #085B69;
     padding:50px 70px;
     border-radius: 30px;
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+
+.listing-filter{
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -524,6 +531,20 @@ button.banner-search img{
     font-size: 40px;
     color:#fff;
     font-weight: 500;
+}
+
+.tblSale{
+    width: 100%;
+}
+
+
+.tblSale.active{
+    display: block;
+}
+
+.tblLeas{
+    display: none;
+    width: 100%;
 }
 
 
@@ -914,7 +935,7 @@ button.banner-search img{
 }
 
 .list-item .item-info p{
-    font-size: 14px;
+    font-size: 17px;
 }
 
 
@@ -1095,6 +1116,7 @@ button.banner-search img{
 
   .card-items.list table thead tr th{
     padding:10px 20px;
+    width: calc(100% / 6);
   }
 
   .card-items.list table tbody{
@@ -2242,6 +2264,7 @@ input[type="submit"]{
 
 .unitDetail img {
     width: 100%;
+    cursor: pointer;
 }
 
 #forLease{

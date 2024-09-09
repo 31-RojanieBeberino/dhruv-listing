@@ -23,6 +23,8 @@ $(document).ready(function(){
         $('#forLease').css('display', 'none');
         $('.banner-search').addClass('activeBtn');
         $('#forleasebtn').removeClass('activeBtn');
+        $('.tblSale').css('display', 'block');
+        $('.tblLeas').css('display', 'none');
     })
 
     $('#forleasebtn').click(function(){
@@ -30,6 +32,8 @@ $(document).ready(function(){
         $('#forLease').css('display', 'flex');
         $('.banner-search').addClass('activeBtn');
         $('#forsalebtn').removeClass('activeBtn');
+        $('.tblSale').css('display', 'none');
+        $('.tblLeas').css('display', 'block');
     })
 
 
@@ -127,52 +131,58 @@ $(document).ready(function(){
 
 
 
-    
 
 
-    const itemsPerPage = 6;
-const $items = $('.list-item');
-const totalItems = $items.length;
-const totalPages = Math.ceil(totalItems / itemsPerPage);
+    $.fn.setupPagination = function(itemsSelector, itemsPerPage = 6) {
+        const $container = this;
+        const $items = $container.find(itemsSelector);
+        const totalItems = $items.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-function showPage(pageNumber) {
-    $items.hide();
-    $items.slice((pageNumber - 1) * itemsPerPage, pageNumber * itemsPerPage).show();
-}
+        function showPage(pageNumber) {
+            $items.hide();
+            $items.slice((pageNumber - 1) * itemsPerPage, pageNumber * itemsPerPage).show();
+        }
 
-function createPagination() {
-    const $pagination = $('.pagination');
-    $pagination.empty(); // Clear existing pagination
-    for (let i = 1; i <= totalPages; i++) {
-        const $btn = $('<button>')
-            .addClass('pagination-btn')
-            .attr('data-page', i)
-            .text(i);
-        $pagination.append($btn);
-    }
-}
+        function createPagination() {
+            const $pagination = $container.find('.pagination');
+            $pagination.empty(); // Clear existing pagination
+            for (let i = 1; i <= totalPages; i++) {
+                const $btn = $('<button>')
+                    .addClass('pagination-btn')
+                    .attr('data-page', i)
+                    .text(i);
+                $pagination.append($btn);
+            }
+        }
 
-function updatePagination(currentPage) {
-    $('.pagination-btn').removeClass('active');
-    $(`.pagination-btn[data-page="${currentPage}"]`).addClass('active');
-}
+        function updatePagination(currentPage) {
+            $container.find('.pagination-btn').removeClass('active');
+            $container.find(`.pagination-btn[data-page="${currentPage}"]`).addClass('active');
+        }
 
-// Initialize pagination
-createPagination();
-showPage(1); // Show first page initially
+        // Initialize pagination
+        createPagination();
+        showPage(1); // Show first page initially
 
-// Handle pagination button clicks
-$(document).on('click', '.pagination-btn', function() {
-    const pageNumber = $(this).data('page');
-    showPage(pageNumber);
-    updatePagination(pageNumber);
-    
-    // Scroll to the first item of the current page
-    const $firstItem = $items.filter(':visible').first();
-    $('html, body').animate({
-        scrollTop: $firstItem.offset().top
-    }, 500); // Adjust the duration as needed
-});
+        // Handle pagination button clicks
+        $container.on('click', '.pagination-btn', function() {
+            const pageNumber = $(this).data('page');
+            showPage(pageNumber);
+            updatePagination(pageNumber);
+
+            // Scroll to the first item of the current page
+            const $firstItem = $items.filter(':visible').first();
+            $('html, body').animate({
+                scrollTop: $firstItem.offset().top
+            }, 500); // Adjust the duration as needed
+        });
+
+        return this; // Allow jQuery chaining
+    };
+
+    $('.tblSale').setupPagination('.list-item', 6);
+    $('.tblLeas').setupPagination('.list-item', 6);
 
 
 

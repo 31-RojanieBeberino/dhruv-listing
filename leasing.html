@@ -184,212 +184,413 @@ body {
 
     <section class="main-section listing-sec" style="background-image: url('images/image.webp');">
         <div class="main-inner-sec listing-content">
-            <form class="listing-filter active" id="forSale">
-                <div class="list-filtering">
-                    <div class="dropdown-field">
-                        <div class="prop-type">
-                            <div class="prop-name">
-                                <h5>Property Type</h5>
-                                <img class="chevo" src="images/Polygon.png">
-                            </div>
-                            <ul class="prop-list main-prop-list">
-                                <li><input type="checkbox" name="apartments">Apartments</li>
-                                <li><input type="checkbox" name="healthcare">Healthcare</li>
-                                <li><input type="checkbox" name="Hospitality">Hospitality</li>
-                                <li><input type="checkbox" name="Industrial">Industrial</li>
-                                <li><input type="checkbox" name="Land">Land</li>
-                                <li><input type="checkbox" name="Manufactured Housing">Manufactured Housing</li>
-                                <li><input type="checkbox" name="Mixed-Use">Mixed-Use</li>
-                                <li><input type="checkbox" name="Office">Office</li>
-                                <li><input type="checkbox" name="Self Storage">Self Storage</li>
-                                <li><input type="checkbox" name="Shopping Centers">Shopping Centers</li>
-                                <li><input type="checkbox" name="Bank">Bank</li>
-                                <li><input type="checkbox" name="Convenience Stores/Gas Station">Convenience Stores/Gas Station</li>
-                                <li><input type="checkbox" name="Dollar Store">Dollar Store</li>
-                                <li><input type="checkbox" name="Drugstore">Drugstore</li>
-                                <li><input type="checkbox" name="Education">Education</li>
-                                <li><input type="checkbox" name="Grocery Store">Grocery Store</li>
-                                <li><input type="checkbox" name="Lifestyle">Lifestyle</li>
-                                <li><input type="checkbox" name="Mass Merchant">Mass Merchant</li>
-                                <li><input type="checkbox" name="Restaurant">Restaurant</li>
-                                <li><input type="checkbox" name="Other">Other</li>
-                                <input type="submit" class="apply" value="APPLY">
-                            </ul>
-                        </div>
-                        <div class="prop-type">
-                            <div class="prop-name">
-                                <h5>Price</h5>
-                                <img class="chevo" src="images/Polygon.png">
-                            </div>
-                            <ul class="prop-list min-max">
-                                <li>Min<input type="text" name="Min" placeholder="$"></li>
-                                <li>Max<input type="text" name="max" placeholder="$"></li>
-                                <input type="submit" value="APPLY">
-                            </ul>
-                        </div>
 
-                        <div class="prop-type">
-                            <div class="prop-name">
-                                <h5>Location</h5>
-                                <img class="chevo" src="images/Polygon.png">
-                            </div>
-                            <ul class="prop-list loc">
-                                <li>
-                                    State
-                                    <select name="state">
-                                        <option value="select">Select</option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                        <option value="CO">Colorado</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="DE">Delaware</option>
-                                        <option value="FL">Florida</option>
-                                        <option value="GA">Georgia</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="ID">Idaho</option>
-                                        <option value="IL">Illinois</option>
-                                        <option value="IN">Indiana</option>
-                                        <option value="IA">Iowa</option>
-                                        <option value="KS">Kansas</option>
-                                        <option value="KY">Kentucky</option>
-                                        <option value="LA">Louisiana</option>
-                                        <option value="ME">Maine</option>
-                                        <option value="MD">Maryland</option>
-                                        <option value="MA">Massachusetts</option>
-                                        <option value="MI">Michigan</option>
-                                        <option value="MN">Minnesota</option>
-                                        <option value="MS">Mississippi</option>
-                                        <option value="MO">Missouri</option>
-                                        <option value="MT">Montana</option>
-                                        <option value="NE">Nebraska</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="NH">New Hampshire</option>
-                                        <option value="NJ">New Jersey</option>
-                                        <option value="NM">New Mexico</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NC">North Carolina</option>
-                                        <option value="ND">North Dakota</option>
-                                        <option value="OH">Ohio</option>
-                                        <option value="OK">Oklahoma</option>
-                                        <option value="OR">Oregon</option>
-                                        <option value="PA">Pennsylvania</option>
-                                        <option value="RI">Rhode Island</option>
-                                        <option value="SC">South Carolina</option>
-                                        <option value="SD">South Dakota</option>
-                                        <option value="TN">Tennessee</option>
-                                        <option value="TX">Texas</option>
-                                        <option value="UT">Utah</option>
-                                        <option value="VT">Vermont</option>
-                                        <option value="VA">Virginia</option>
-                                        <option value="WA">Washington</option>
-                                        <option value="WV">West Virginia</option>
-                                        <option value="WI">Wisconsin</option>
-                                        <option value="WY">Wyoming</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    City
-                                    <select name="city">
-                                        <option value="select">Select</option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                        <option value="CO">Colorado</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="DE">Delaware</option>
-                                        <option value="FL">Florida</option>
-                                        <option value="GA">Georgia</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="ID">Idaho</option>
-                                        <option value="IL">Illinois</option>
-                                        <option value="IN">Indiana</option>
-                                        <option value="IA">Iowa</option>
-                                        <option value="KS">Kansas</option>
-                                        <option value="KY">Kentucky</option>
-                                        <option value="LA">Louisiana</option>
-                                        <option value="ME">Maine</option>
-                                        <option value="MD">Maryland</option>
-                                        <option value="MA">Massachusetts</option>
-                                        <option value="MI">Michigan</option>
-                                        <option value="MN">Minnesota</option>
-                                        <option value="MS">Mississippi</option>
-                                        <option value="MO">Missouri</option>
-                                        <option value="MT">Montana</option>
-                                        <option value="NE">Nebraska</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="NH">New Hampshire</option>
-                                        <option value="NJ">New Jersey</option>
-                                        <option value="NM">New Mexico</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NC">North Carolina</option>
-                                        <option value="ND">North Dakota</option>
-                                        <option value="OH">Ohio</option>
-                                        <option value="OK">Oklahoma</option>
-                                        <option value="OR">Oregon</option>
-                                        <option value="PA">Pennsylvania</option>
-                                        <option value="RI">Rhode Island</option>
-                                        <option value="SC">South Carolina</option>
-                                        <option value="SD">South Dakota</option>
-                                        <option value="TN">Tennessee</option>
-                                        <option value="TX">Texas</option>
-                                        <option value="UT">Utah</option>
-                                        <option value="VT">Vermont</option>
-                                        <option value="VA">Virginia</option>
-                                        <option value="WA">Washington</option>
-                                        <option value="WV">West Virginia</option>
-                                        <option value="WI">Wisconsin</option>
-                                        <option value="WY">Wyoming</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    Zip Code
-                                    <input type="text" name="zip-code">
-                                </li>
-                                <input type="submit" value="APPLY">
-                            </ul>
-                        </div>
-
-                        <div class="prop-type">
-                            <div class="prop-name">
-                                <h5>Cap Rate</h5>
-                                <img class="chevo" src="images/Polygon.png">
-                            </div>
-                            <ul class="prop-list min-max">
-                                <li>Min<input type="text" placeholder="%" name="Min-cr"></li>
-                                <li>Max<input type="text" placeholder="%" name="max-cr"></li>
-                                <input type="submit" value="APPLY">
-                            </ul>
-                        </div>
-
-                        <div class="prop-type">
-                            <div class="prop-name">
-                                <h5>Tenancy</h5>
-                                <img class="chevo" src="images/Polygon.png">
-                            </div>
-                            <ul class="prop-list tenant">
-                                <li>
-                                    <input type="checkbox" name="single-tenant">
-                                    Single Tenant
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="multi-tenant">
-                                    Multi Tenant
-                                </li>
-                                <input type="submit" value="APPLY">
-                            </ul>
-                        </div>
-
+            <div class="formSectionFilter">
+                <form class="listing-filter active" id="forSale">
+                    <h3>Find a Property</h3>
+                    <div class="location-input">
+                        <input type="text" class="location-search" placeholder="Search By Location">
                         <div class="result-btn">
-                            <input type="button" value="Clear Filter">
+                            <input type="button" value="Search">
                             <img src="images/colored-btn.png">
                         </div>
                     </div>
-                </div>
+                    <div class="list-filtering">
+                        <div class="dropdown-field">
+                            <div class="prop-type">
+                                <div class="prop-name">
+                                    <h5>Property Type</h5>
+                                    <img class="chevo" src="images/Polygon.png">
+                                </div>
+                                <ul class="prop-list main-prop-list">
+                                    <li><input type="checkbox" name="apartments">Apartments</li>
+                                    <li><input type="checkbox" name="healthcare">Healthcare</li>
+                                    <li><input type="checkbox" name="Hospitality">Hospitality</li>
+                                    <li><input type="checkbox" name="Industrial">Industrial</li>
+                                    <li><input type="checkbox" name="Land">Land</li>
+                                    <li><input type="checkbox" name="Manufactured Housing">Manufactured Housing</li>
+                                    <li><input type="checkbox" name="Mixed-Use">Mixed-Use</li>
+                                    <li><input type="checkbox" name="Office">Office</li>
+                                    <li><input type="checkbox" name="Self Storage">Self Storage</li>
+                                    <li><input type="checkbox" name="Shopping Centers">Shopping Centers</li>
+                                    <li><input type="checkbox" name="Bank">Bank</li>
+                                    <li><input type="checkbox" name="Convenience Stores/Gas Station">Convenience Stores/Gas Station</li>
+                                    <li><input type="checkbox" name="Dollar Store">Dollar Store</li>
+                                    <li><input type="checkbox" name="Drugstore">Drugstore</li>
+                                    <li><input type="checkbox" name="Education">Education</li>
+                                    <li><input type="checkbox" name="Grocery Store">Grocery Store</li>
+                                    <li><input type="checkbox" name="Lifestyle">Lifestyle</li>
+                                    <li><input type="checkbox" name="Mass Merchant">Mass Merchant</li>
+                                    <li><input type="checkbox" name="Restaurant">Restaurant</li>
+                                    <li><input type="checkbox" name="Other">Other</li>
+                                    <input type="submit" class="apply" value="APPLY">
+                                </ul>
+                            </div>
+                            <div class="prop-type">
+                                <div class="prop-name">
+                                    <h5>Price</h5>
+                                    <img class="chevo" src="images/Polygon.png">
+                                </div>
+                                <ul class="prop-list min-max">
+                                    <li>Min<input type="text" name="Min" placeholder="$"></li>
+                                    <li>Max<input type="text" name="max" placeholder="$"></li>
+                                    <input type="submit" value="APPLY">
+                                </ul>
+                            </div>
+    
+                            <div class="prop-type">
+                                <div class="prop-name">
+                                    <h5>Location</h5>
+                                    <img class="chevo" src="images/Polygon.png">
+                                </div>
+                                <ul class="prop-list loc">
+                                    <li>
+                                        State
+                                        <select name="state">
+                                            <option value="select">Select</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        City
+                                        <select name="city">
+                                            <option value="select">Select</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        Zip Code
+                                        <input type="text" name="zip-code">
+                                    </li>
+                                    <input type="submit" value="APPLY">
+                                </ul>
+                            </div>
+    
+                            <div class="prop-type">
+                                <div class="prop-name">
+                                    <h5>Cap Rate</h5>
+                                    <img class="chevo" src="images/Polygon.png">
+                                </div>
+                                <ul class="prop-list min-max">
+                                    <li>Min<input type="text" placeholder="%" name="Min-cr"></li>
+                                    <li>Max<input type="text" placeholder="%" name="max-cr"></li>
+                                    <input type="submit" value="APPLY">
+                                </ul>
+                            </div>
+    
+                            <div class="prop-type">
+                                <div class="prop-name">
+                                    <h5>Tenancy</h5>
+                                    <img class="chevo" src="images/Polygon.png">
+                                </div>
+                                <ul class="prop-list tenant">
+                                    <li>
+                                        <input type="checkbox" name="single-tenant">
+                                        Single Tenant
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="multi-tenant">
+                                        Multi Tenant
+                                    </li>
+                                    <input type="submit" value="APPLY">
+                                </ul>
+                            </div>
+    
+                            <div class="result-btn">
+                                <input type="button" value="Clear Filter">
+                                <img src="images/colored-btn.png">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+    
+                <form class="listing-filter" id="forLease">
+                    <h3>Find a Property</h3>
+                    <div class="location-input">
+                        <input type="text" class="location-search" placeholder="Search By Location">
+                        <div class="result-btn">
+                            <input type="button" value="Search">
+                            <img src="images/colored-btn.png">
+                        </div>
+                    </div>
+                    <div class="list-filtering">
+                        <div class="dropdown-field leasingSection">
+                            <div class="prop-type">
+                                <div class="prop-name">
+                                    <h5>Space Use</h5>
+                                    <img class="chevo" src="images/Polygon.png">
+                                </div>
+                                <ul class="prop-list main-prop-list leasingDropdown">
+                                    <li><input type="checkbox" name="apartments">Apartments</li>
+                                    <li><input type="checkbox" name="healthcare">Healthcare</li>
+                                    <li><input type="checkbox" name="Hospitality">Hospitality</li>
+                                    <li><input type="checkbox" name="Industrial">Industrial</li>
+                                    <li><input type="checkbox" name="Land">Land</li>
+                                    <li><input type="checkbox" name="Manufactured Housing">Manufactured Housing</li>
+                                    <li><input type="checkbox" name="Mixed-Use">Mixed-Use</li>
+                                    <li><input type="checkbox" name="Office">Office</li>
+                                    <li><input type="checkbox" name="Retail">Retail</li>
+                                    <li><input type="checkbox" name="Self Storage">Self Storage</li>
+                                    <li><input type="checkbox" name="Shopping Centers">Shopping Centers</li>
+                                    <input type="submit" class="apply" value="APPLY">
+                                </ul>
+                            </div>
+                            <div class="prop-type">
+                                <div class="prop-name">
+                                    <h5>Rental Rate</h5>
+                                    <img class="chevo" src="images/Polygon.png">
+                                </div>
+                                <ul class="prop-list min-max">
+                                    <li>Min<input type="text" name="Min" placeholder="$"></li>
+                                    <li>Max<input type="text" name="max" placeholder="$"></li>
+                                    <input type="submit" value="APPLY">
+                                </ul>
+                            </div>
+    
+                            <div class="prop-type leasingLoc">
+                                <div class="prop-name">
+                                    <h5>Location</h5>
+                                    <img class="chevo" src="images/Polygon.png">
+                                </div>
+                                <ul class="prop-list loc">
+                                    <li>
+                                        State
+                                        <select name="state">
+                                            <option value="select">Select</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        City
+                                        <select name="city">
+                                            <option value="select">Select</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        Zip Code
+                                        <input type="text" name="zip-code">
+                                    </li>
+                                    <input type="submit" value="APPLY">
+                                </ul>
+                            </div>
+    
+                            <div class="prop-type">
+                                <div class="prop-name">
+                                    <h5>Size(SF)</h5>
+                                    <img class="chevo" src="images/Polygon.png">
+                                </div>
+                                <ul class="prop-list min-max">
+                                    <li>Min<input type="text" placeholder="SF" name="Min-cr"></li>
+                                    <li>Max<input type="text" placeholder="SF" name="max-cr"></li>
+                                    <input type="submit" value="APPLY">
+                                </ul>
+                            </div>
+    
+    
+                            <div class="result-btn">
+                                <input type="button" value="Clear Filter">
+                                <img src="images/colored-btn.png">
+                            </div>
+                        </div>
+                    </div>
+                </form>
                 <div class="select-view">
                     <h5>SELECT VIEW</h5>
                     <div class="view-sel">
@@ -398,337 +599,609 @@ body {
                         <i id="mapSection"  class="fas fa-map"></i>
                     </div>
                 </div>
-            </form>
+            </div>
 
-            <form class="listing-filter" id="forLease">
-                <div class="list-filtering">
-                    <div class="dropdown-field leasingSection">
-                        <div class="prop-type">
-                            <div class="prop-name">
-                                <h5>Space Use</h5>
-                                <img class="chevo" src="images/Polygon.png">
-                            </div>
-                            <ul class="prop-list main-prop-list leasingDropdown">
-                                <li><input type="checkbox" name="apartments">Apartments</li>
-                                <li><input type="checkbox" name="healthcare">Healthcare</li>
-                                <li><input type="checkbox" name="Hospitality">Hospitality</li>
-                                <li><input type="checkbox" name="Industrial">Industrial</li>
-                                <li><input type="checkbox" name="Land">Land</li>
-                                <li><input type="checkbox" name="Manufactured Housing">Manufactured Housing</li>
-                                <li><input type="checkbox" name="Mixed-Use">Mixed-Use</li>
-                                <li><input type="checkbox" name="Office">Office</li>
-                                <li><input type="checkbox" name="Retail">Retail</li>
-                                <li><input type="checkbox" name="Self Storage">Self Storage</li>
-                                <li><input type="checkbox" name="Shopping Centers">Shopping Centers</li>
-                                <input type="submit" class="apply" value="APPLY">
-                            </ul>
-                        </div>
-                        <div class="prop-type">
-                            <div class="prop-name">
-                                <h5>Rental Rate</h5>
-                                <img class="chevo" src="images/Polygon.png">
-                            </div>
-                            <ul class="prop-list min-max">
-                                <li>Min<input type="text" name="Min" placeholder="$"></li>
-                                <li>Max<input type="text" name="max" placeholder="$"></li>
-                                <input type="submit" value="APPLY">
-                            </ul>
-                        </div>
-
-                        <div class="prop-type leasingLoc">
-                            <div class="prop-name">
-                                <h5>Location</h5>
-                                <img class="chevo" src="images/Polygon.png">
-                            </div>
-                            <ul class="prop-list loc">
-                                <li>
-                                    State
-                                    <select name="state">
-                                        <option value="select">Select</option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                        <option value="CO">Colorado</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="DE">Delaware</option>
-                                        <option value="FL">Florida</option>
-                                        <option value="GA">Georgia</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="ID">Idaho</option>
-                                        <option value="IL">Illinois</option>
-                                        <option value="IN">Indiana</option>
-                                        <option value="IA">Iowa</option>
-                                        <option value="KS">Kansas</option>
-                                        <option value="KY">Kentucky</option>
-                                        <option value="LA">Louisiana</option>
-                                        <option value="ME">Maine</option>
-                                        <option value="MD">Maryland</option>
-                                        <option value="MA">Massachusetts</option>
-                                        <option value="MI">Michigan</option>
-                                        <option value="MN">Minnesota</option>
-                                        <option value="MS">Mississippi</option>
-                                        <option value="MO">Missouri</option>
-                                        <option value="MT">Montana</option>
-                                        <option value="NE">Nebraska</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="NH">New Hampshire</option>
-                                        <option value="NJ">New Jersey</option>
-                                        <option value="NM">New Mexico</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NC">North Carolina</option>
-                                        <option value="ND">North Dakota</option>
-                                        <option value="OH">Ohio</option>
-                                        <option value="OK">Oklahoma</option>
-                                        <option value="OR">Oregon</option>
-                                        <option value="PA">Pennsylvania</option>
-                                        <option value="RI">Rhode Island</option>
-                                        <option value="SC">South Carolina</option>
-                                        <option value="SD">South Dakota</option>
-                                        <option value="TN">Tennessee</option>
-                                        <option value="TX">Texas</option>
-                                        <option value="UT">Utah</option>
-                                        <option value="VT">Vermont</option>
-                                        <option value="VA">Virginia</option>
-                                        <option value="WA">Washington</option>
-                                        <option value="WV">West Virginia</option>
-                                        <option value="WI">Wisconsin</option>
-                                        <option value="WY">Wyoming</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    City
-                                    <select name="city">
-                                        <option value="select">Select</option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                        <option value="CO">Colorado</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="DE">Delaware</option>
-                                        <option value="FL">Florida</option>
-                                        <option value="GA">Georgia</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="ID">Idaho</option>
-                                        <option value="IL">Illinois</option>
-                                        <option value="IN">Indiana</option>
-                                        <option value="IA">Iowa</option>
-                                        <option value="KS">Kansas</option>
-                                        <option value="KY">Kentucky</option>
-                                        <option value="LA">Louisiana</option>
-                                        <option value="ME">Maine</option>
-                                        <option value="MD">Maryland</option>
-                                        <option value="MA">Massachusetts</option>
-                                        <option value="MI">Michigan</option>
-                                        <option value="MN">Minnesota</option>
-                                        <option value="MS">Mississippi</option>
-                                        <option value="MO">Missouri</option>
-                                        <option value="MT">Montana</option>
-                                        <option value="NE">Nebraska</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="NH">New Hampshire</option>
-                                        <option value="NJ">New Jersey</option>
-                                        <option value="NM">New Mexico</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NC">North Carolina</option>
-                                        <option value="ND">North Dakota</option>
-                                        <option value="OH">Ohio</option>
-                                        <option value="OK">Oklahoma</option>
-                                        <option value="OR">Oregon</option>
-                                        <option value="PA">Pennsylvania</option>
-                                        <option value="RI">Rhode Island</option>
-                                        <option value="SC">South Carolina</option>
-                                        <option value="SD">South Dakota</option>
-                                        <option value="TN">Tennessee</option>
-                                        <option value="TX">Texas</option>
-                                        <option value="UT">Utah</option>
-                                        <option value="VT">Vermont</option>
-                                        <option value="VA">Virginia</option>
-                                        <option value="WA">Washington</option>
-                                        <option value="WV">West Virginia</option>
-                                        <option value="WI">Wisconsin</option>
-                                        <option value="WY">Wyoming</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    Zip Code
-                                    <input type="text" name="zip-code">
-                                </li>
-                                <input type="submit" value="APPLY">
-                            </ul>
-                        </div>
-
-                        <div class="prop-type">
-                            <div class="prop-name">
-                                <h5>Size(SF)</h5>
-                                <img class="chevo" src="images/Polygon.png">
-                            </div>
-                            <ul class="prop-list min-max">
-                                <li>Min<input type="text" placeholder="SF" name="Min-cr"></li>
-                                <li>Max<input type="text" placeholder="SF" name="max-cr"></li>
-                                <input type="submit" value="APPLY">
-                            </ul>
-                        </div>
-
-
-                        <div class="result-btn">
-                            <input type="button" value="Clear Filter">
-                            <img src="images/colored-btn.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="select-view">
-                    <h5>SELECT VIEW</h5>
-                    <div class="view-sel">
-                        <i id="grid"  class="fas fa-th"></i>
-                        <i id="list"  class="fas fa-list"></i>
-                        <i id="mapSection"  class="fas fa-map"></i>
-                    </div>
-                </div>
-            </form>
+            
 
 
             <div class="listing-result">
                 <div class="list-items">
-                    <div class="card-items grid" id="item-container">
-                        <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
-                            <a class="list-tag">New</a>
-                            <div class="list-info-sec">
-                                <div class="item-info">
-                                    <h3><a class="sliderTitle" href="/listing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
-                                    <p>City: LA</p>
-                                    <div class="item-price">
-                                        <h5>Space Available : 12,000 sf</h5>
-                                        <span>Type: Retail</span>
+                    <div class="tblSale active">
+                        <div class="card-items grid " id="item-container">
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/cit4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item" style="background-image: url('images/city1.png');">
+                                <div class="mainSlider">
+                                    <div class="item">
+                                        <img src="images/city1.png" alt="Image 1">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city2.png" alt="Image 2">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city3.png" alt="Image 3">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/city4.png" alt="Image 4">
+                                    </div>
+                                </div>
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/listing-innerMap.html">Albertson</a></h3>
+                                        <p>Cap Rate: 5.35%</p>
+                                        <div class="item-price">
+                                            <h5>Price: $13,401,974</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-                        <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
-                            <a class="list-tag">New</a>
-                            <div class="list-info-sec">
-                                <div class="item-info">
-                                    <h3><a class="sliderTitle" href="/listing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
-                                    <p>City: LA</p>
-                                    <div class="item-price">
-                                        <h5>Space Available : 12,000 sf</h5>
-                                        <span>Type: Retail</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
-                            <a class="list-tag">New</a>
-                            <div class="list-info-sec">
-                                <div class="item-info">
-                                    <h3><a class="sliderTitle" href="/listing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
-                                    <p>City: LA</p>
-                                    <div class="item-price">
-                                        <h5>Space Available : 12,000 sf</h5>
-                                        <span>Type: Retail</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
-                            <a class="list-tag">New</a>
-                            <div class="list-info-sec">
-                                <div class="item-info">
-                                    <h3><a class="sliderTitle" href="/listing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
-                                    <p>City: LA</p>
-                                    <div class="item-price">
-                                        <h5>Space Available : 12,000 sf</h5>
-                                        <span>Type: Retail</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
-                            <a class="list-tag">New</a>
-                            <div class="list-info-sec">
-                                <div class="item-info">
-                                    <h3><a class="sliderTitle" href="/listing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
-                                    <p>City: LA</p>
-                                    <div class="item-price">
-                                        <h5>Space Available : 12,000 sf</h5>
-                                        <span>Type: Retail</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
-                            <a class="list-tag">New</a>
-                            <div class="list-info-sec">
-                                <div class="item-info">
-                                    <h3><a class="sliderTitle" href="/listing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
-                                    <p>City: LA</p>
-                                    <div class="item-price">
-                                        <h5>Space Available : 12,000 sf</h5>
-                                        <span>Type: Retail</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
-                            <a class="list-tag">New</a>
-                            <div class="list-info-sec">
-                                <div class="item-info">
-                                    <h3><a class="sliderTitle" href="/listing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
-                                    <p>City: LA</p>
-                                    <div class="item-price">
-                                        <h5>Space Available : 12,000 sf</h5>
-                                        <span>Type: Retail</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                    
-                        <!-- <div class="list-item" style="background-image: url('images/city1.png');">
-                            <div class="mainSlider">
-                                <div class="item">
-                                    <img src="images/city1.png" alt="Image 1">
-                                </div>
-                                <div class="item">
-                                    <img src="images/city2.png" alt="Image 2">
-                                </div>
-                                <div class="item">
-                                    <img src="images/city3.png" alt="Image 3">
-                                </div>
-                                <div class="item">
-                                    <img src="images/city4.png" alt="Image 4">
-                                </div>
-                            </div>
-                            <a class="list-tag">New</a>
-                            <div class="list-info-sec">
-                                <div class="item-info">
-                                    <h3><a class="sliderTitle" href="/listing-inner.html">Albertson</a></h3>
-                                    <p>Cap Rate: 5.35%</p>
-                                    <div class="item-price">
-                                        <h5>Price: $13,401,974</h5>
-                                        <span>Type: Retail</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                        <div class="pagination"></div>
                     </div>
-                    <div class="pagination">
-                       
+
+                    <div class="tblLeas">
+                        <div class="card-items grid" id="item-container">
+                            <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/leasing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
+                                        <p>City: LA</p>
+                                        <div class="item-price">
+                                            <h5>Space Available : 12,000 sf</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/leasing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
+                                        <p>City: LA</p>
+                                        <div class="item-price">
+                                            <h5>Space Available : 12,000 sf</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/leasing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
+                                        <p>City: LA</p>
+                                        <div class="item-price">
+                                            <h5>Space Available : 12,000 sf</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/leasing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
+                                        <p>City: LA</p>
+                                        <div class="item-price">
+                                            <h5>Space Available : 12,000 sf</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/leasing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
+                                        <p>City: LA</p>
+                                        <div class="item-price">
+                                            <h5>Space Available : 12,000 sf</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                            <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/leasing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
+                                        <p>City: LA</p>
+                                        <div class="item-price">
+                                            <h5>Space Available : 12,000 sf</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                            <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
+                                <a class="list-tag">New</a>
+                                <div class="list-info-sec">
+                                    <div class="item-info">
+                                        <h3><a class="sliderTitle" href="/leasing-inner.html">Albertson Albertson Albertson Albertson Albertson</a></h3>
+                                        <p>City: LA</p>
+                                        <div class="item-price">
+                                            <h5>Space Available : 12,000 sf</h5>
+                                            <span>Type: Retail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="pagination"></div>
                     </div>
+
                     <div class="card-items list">
-                        <table>
+                        <table class="tblSale active">
+                            <thead>
+                              <tr>
+                                <th>Property Name</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Cap Rate</th>
+                                <th>Price</th>
+                                <th>Type</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                              <tr>
+                                <td><a href="/listing-innerMap.html">Albertson</a></td>
+                                <td>Jacksonville</td>
+                                <td>FL</td>
+                                <td>5.35%</td>
+                                <td>$13,401,974</td>
+                                <td>Retail</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <table class="tblLeas">
                             <thead>
                               <tr>
                                 <th>Property Name</th>
@@ -741,7 +1214,7 @@ body {
                             </thead>
                             <tbody>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -749,7 +1222,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -757,7 +1230,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -765,7 +1238,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -773,7 +1246,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -781,7 +1254,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -789,7 +1262,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -797,7 +1270,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -805,7 +1278,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -813,7 +1286,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -821,7 +1294,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -829,7 +1302,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -837,7 +1310,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -845,7 +1318,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -853,7 +1326,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -861,7 +1334,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -869,7 +1342,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -877,7 +1350,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                               <tr>
-                                <td><a href="/listing-inner.html">Albertson</a></td>
+                                <td><a href="/leasing-inner.html">Albertson</a></td>
                                 <td>Jacksonville</td>
                                 <td>FL</td>
                                 <td>5.35%</td>
@@ -885,7 +1358,7 @@ body {
                                 <td>Retail</td>
                               </tr>
                             </tbody>
-                          </table>
+                        </table>
                     </div>
                 </div>
                 <div class="listing-map">
