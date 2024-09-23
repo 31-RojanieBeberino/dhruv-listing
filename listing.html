@@ -52,6 +52,22 @@
         font-size: 0px;
     }
 
+    .tblSale{
+        width: 100%;
+    }
+
+    .tblSale.active{
+        display: block;
+    }
+
+    .listing-filter.active{
+        display: flex;
+    }
+
+
+    .grid-items.active, .table-items.active{
+        display: block;
+    }
 
 
 html,
@@ -607,7 +623,7 @@ body {
 
             <div class="listing-result">
                 <div class="list-items">
-                    <div class="tblSale active">
+                    <div class="grid-items tblSale active">
                         <div class="card-items grid " id="item-container">
                             <div class="list-item" style="background-image: url('images/city1.png');">
                                 <div class="mainSlider">
@@ -937,7 +953,7 @@ body {
                         <div class="pagination"></div>
                     </div>
 
-                    <div class="tblLeas">
+                    <div class="grid-items tblLeas">
                         <div class="card-items grid" id="item-container">
                             <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
                                 <a class="list-tag">New</a>
@@ -1044,7 +1060,7 @@ body {
                     </div>
 
                     <div class="card-items list">
-                        <table class="tblSale active">
+                        <table class="table-items tblSale active">
                             <thead>
                               <tr>
                                 <th>Property Name</th>
@@ -1202,7 +1218,7 @@ body {
                               </tr>
                             </tbody>
                         </table>
-                        <table class="tblLeas">
+                        <table class="table-items tblLeas">
                             <thead>
                               <tr>
                                 <th>Property Name</th>

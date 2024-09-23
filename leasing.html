@@ -53,13 +53,28 @@
     }
 
 
+    .tblLeas.active{
+        display: block;
+        width: 100%;
+    }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+    .listing-filter.active{
+        display: flex;
+    }
+
+    .grid-items.active, .table-items.active{
+        display: block;
+    }
+
+
+
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
 
     </style>
@@ -187,7 +202,7 @@ body {
         <div class="main-inner-sec listing-content">
 
             <div class="formSectionFilter">
-                <form class="listing-filter active" id="forSale">
+                <form class="listing-filter" id="forSale">
                     <h3>Find a Property</h3>
                     <div class="location-input">
                         <input type="text" class="location-search" placeholder="Search By Location">
@@ -403,7 +418,7 @@ body {
                     </div>
                 </form>
     
-                <form class="listing-filter" id="forLease">
+                <form class="listing-filter active" id="forLease">
                     <h3>Find a Property</h3>
                     <div class="location-input">
                         <input type="text" class="location-search" placeholder="Search By Location">
@@ -607,7 +622,7 @@ body {
 
             <div class="listing-result">
                 <div class="list-items">
-                    <div class="tblSale active">
+                    <div class="grid-items tblSale">
                         <div class="card-items grid " id="item-container">
                             <div class="list-item" style="background-image: url('images/city1.png');">
                                 <div class="mainSlider">
@@ -937,7 +952,7 @@ body {
                         <div class="pagination"></div>
                     </div>
 
-                    <div class="tblLeas">
+                    <div class="grid-items tblLeas active">
                         <div class="card-items grid" id="item-container">
                             <div class="list-item leasingItem" style="background-image: url('images/city1.png');">
                                 <a class="list-tag">New</a>
@@ -1044,7 +1059,7 @@ body {
                     </div>
 
                     <div class="card-items list">
-                        <table class="tblSale active">
+                        <table class="table-items tblSale active">
                             <thead>
                               <tr>
                                 <th>Property Name</th>
@@ -1202,7 +1217,7 @@ body {
                               </tr>
                             </tbody>
                         </table>
-                        <table class="tblLeas">
+                        <table class="table-items tblLeas">
                             <thead>
                               <tr>
                                 <th>Property Name</th>

@@ -519,10 +519,14 @@ button.banner-search img{
     gap:20px;
 }
 
+.grid-items{
+    display: none;
+}
+
 
 
 .listing-filter{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap:20px;
 }
@@ -533,19 +537,6 @@ button.banner-search img{
     font-weight: 500;
 }
 
-.tblSale{
-    width: 100%;
-}
-
-
-.tblSale.active{
-    display: block;
-}
-
-.tblLeas{
-    display: none;
-    width: 100%;
-}
 
 
 .location-input{
@@ -2267,6 +2258,3 @@ input[type="submit"]{
     cursor: pointer;
 }
 
-#forLease{
-    display:none;
-}
