@@ -831,10 +831,17 @@
     }
 
     .unit-details-sec{
-        flex-direction: column;
+        flex-wrap: wrap;
+        gap:0;
+        row-gap: 20px;
     }
 
     .unitDetail{
+        width:50%;
+        align-items: flex-start;
+    }
+
+    .unitDetail.imageCol{
         width:100%;
     }
 
